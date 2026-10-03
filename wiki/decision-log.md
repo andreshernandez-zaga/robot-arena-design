@@ -23,3 +23,7 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-03 | Matches show a replay plus data (damage, actions per turn, ability notices); after the match there's a replay, log or summary | Provisional |
 | 2026-10-03 | How to improve crossing odds (filter vs. directed breeding vs. locks vs. test runs) | Open |
 | 2026-10-03 | Size of the inference gap and how much numeric detail matches show | Open |
+| 2026-10-03 | Generous numbers in matches; reverse-engineering the rules is welcome, but not a specific opponent's full blueprint. Supersedes "outcomes, not formulas" | Provisional |
+| 2026-10-03 | Robots carry many hidden numbers (genes) that resolve into a few readable stats | Provisional |
+| 2026-10-03 | Added an Inspirations page (Pokémon breeding, Diablo, Final Fantasy's Scan, MMO combat feedback, etc.) | Provisional |
+| 2026-10-03 | Scanning, visibility levels, inheritance tools, bonuses for distant lineages | Open |

@@ -36,6 +36,14 @@ Crossing would work on the genes and the part tree, **never directly on the stat
   - *Tension:* the player controls robots with action points, so this logic could only drive reactions or passive behavior. It might suit simultaneous turns. **Parked.**
 - **Other options not yet explored:** a flat attribute array with a dedicated crossing rule (the owner's alternative), or something else entirely. The owner explicitly invited creative alternatives, so this list is not closed.
 
+#### Many genes, few expressed stats (Provisional direction)
+
+- A robot can carry **a lot of numbers**, which gives the gene layer depth.
+- Several hidden genes feed each visible stat, so crossing produces continuous, believable variation.
+- The stat card stays small; the detail is available but hidden by default.
+- *Risk:* when many genes add up into one stat, offspring cluster around the parents' average. Something must break it: recessives, rare mutations, bonuses for distant lineages, or parts that pass to the offspring whole.
+- *Possible flavor:* parts as base + affixes with hidden tiers, as in Diablo. See [Inspirations](inspirations.md).
+
 #### The inference gap (key dial, Open)
 
 How much of the blueprint can a player infer from form and match data, and how much stays hidden?
@@ -67,7 +75,7 @@ Initial archetypes, roughly like chess pieces:
 |---|---|
 | Tank | Sturdy and slow, holds ground |
 | Damage dealer | Deals damage |
-| Saboteur / hacker | Jams signals, disables or damages robots |
+| Saboteur / hacker | Jams signals, disables or damages robots. *Idea:* can scan enemies to reveal hidden information, at the cost of action points |
 | Stealth | Fragile, wins through positioning and flanking |
 
 ### Fixed classes vs. emergent roles (Open)

@@ -50,6 +50,12 @@ This also largely addresses the "most crossovers are worse" risk, since players 
 - **Locking** a part or gene before crossing, at a cost. Each lock reduces variety.
 - **Test runs:** run an offspring through self-play before it takes a slot. This also gives self-play a clear job inside the crossing loop.
 
+- **Inheritance tools** (inspired by Pokémon breeding items): items or actions that pass more of one parent's genes on, or fix a trait. These are a more expressive form of locking.
+- **Bonuses for distant lineages** (inspired by the Masuda method): crossing with a lineage far from yours yields more variation or rarer traits. It fits the narrative and works against everyone converging on the same design. *Open:* how to measure lineage distance.
+- **Abilities you can only get by crossing** (inspired by Pokémon's egg moves): this strengthens PvP as the source of new material.
+
+See [Inspirations](inspirations.md) for sources and caveats.
+
 A filter of some kind could still coexist with these, for example a minimum-viability floor rather than an above-average threshold.
 
 **Monetization caution:** paying to see more offspring is pay-to-win in a different form, the same issue as paid blueprint reveals.

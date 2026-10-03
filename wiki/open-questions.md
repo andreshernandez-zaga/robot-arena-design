@@ -10,6 +10,7 @@
 - [ ] Where does the tree live: the body, the control logic, both, or neither? Or a flat attribute array with its own crossing rule?
 - [ ] How big is the inference gap: how much of a blueprint stays hidden after watching a match?
 - [ ] Recessive or hidden traits: in or out? If in, how bounded?
+- [ ] Many genes, few stats: how do we keep offspring from averaging out?
 - [ ] Should blueprints have a budget (weight, power) that crossing must respect?
 - [ ] Do robots have their own control logic (reactions, passive behavior), or does the player control everything?
 - [ ] How does a blueprint translate into visible form?
@@ -20,13 +21,18 @@
 - [ ] If there's a filter, how do we avoid punishing specialists (e.g. glass cannons)?
 - [ ] How many offspring do you see per crossing? Is that the main difference between what winners and losers get?
 - [ ] Can you reject all offspring, and at what cost?
+- [ ] Inheritance tools: what are they, and how do you get them?
+- [ ] Bonuses for distant lineages: how is lineage distance measured?
+- [ ] Abilities you can only get by crossing: yes or no?
 - [ ] How many crossings, and how are they limited?
 - [ ] Exactly what do winners and losers get to see?
 
 ## Squad & match
 - [ ] Squad size: single robot or a small squad (4–6)?
 - [ ] Simultaneous turns are the leaning. Any reason to go back to alternating?
-- [ ] How much numeric detail do match data and logs show? (Proposed: outcomes, not formulas.)
+- [ ] Which information sits at which visibility level (exact, range, qualitative, hidden)?
+- [ ] Is scanning an ability? Whose, and at what cost?
+- [ ] Do robots show visible damage (dents, lost parts) as information?
 - [ ] What form does the post-match study take: replay, log, summary, or a per-robot scouting report?
 - [ ] How do async matches avoid stalling?
 - [ ] Board/terrain shape.

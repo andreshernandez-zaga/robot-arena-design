@@ -44,8 +44,16 @@ If self-play is the efficient way to evolve, PvP becomes optional. PvP must offe
 
 ## 11. Match data leaks the blueprint
 
-Detailed numbers in replays and logs can be reverse-engineered, by players or by community calculators, until hidden blueprints are effectively public. That kills the blind bet. Mitigation under discussion: show outcomes, not formulas.
+Detailed numbers can be reverse-engineered by players or community calculators. Reverse-engineering the game's **rules** is welcome; that's part of the fun. The risk is narrower: working out one **specific opponent's** blueprint from a single match, which kills the blind bet. Mitigations under discussion: levels of visibility, scanning as a cost, and uniqueness of blueprints through crossing.
 
 ## 12. Crossing-odds heuristics shape the meta
 
 A threshold filter based on averages pushes designs toward generalists and penalizes specialists. Whatever helps the odds will become something players optimize for. Design it with that in mind.
+
+## 13. Scanning becomes mandatory
+
+If scanning (information as an ability) is too strong, every squad needs a hacker and squad diversity collapses. It has to be a real trade-off.
+
+## 14. Number overload on mobile
+
+Lots of numbers delight a minority of players and overwhelm the rest. Detail must be available, but hidden by default.

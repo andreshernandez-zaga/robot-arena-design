@@ -43,9 +43,12 @@
 - Damage and effects must be visible, so that what happens in a match tells you what each robot is.
 - Studying the match afterwards should be **light**. It should inform without feeling overbearing.
 
-### How much to reveal (Open)
-- **Risk:** precise numbers can be reverse-engineered. If the log shows "34 damage, 12 absorbed by armor", players and community tools can derive hidden stats, and blind commitment loses its meaning.
-- **Proposed rule (not agreed): show outcomes, not formulas.**
-  - Show: damage dealt and taken, actions spent, abilities used.
-  - Don't show: armor values, how damage is calculated.
+### How much to reveal (Provisional direction, details Open)
+- **Generous numbers, partial reverse-engineering.** The owner's view, inspired by MMORPGs: seeing damage dealt and resisted, health and energy bars, and so on is part of the thrill. Players reverse-engineering things is the point, but it won't be everything.
+- What players should be able to work out: **the game's rules**. What they shouldn't: **one opponent's full blueprint from one match**.
+- *Superseded:* the earlier proposal "show outcomes, not formulas" was too restrictive.
+- **Candidate: levels of visibility.** Your own robots are fully visible. Enemy information comes as exact numbers, ranges, qualitative messages ("RESISTED", "CRITICAL") or not at all. See [Inspirations](inspirations.md#everquests-consider-and-mmo-health-bars-graded-precision).
+- **Candidate: scanning.** An ability, perhaps for the hacker, that spends action points to reveal more about an enemy.
+- **Candidate: visible damage** (dented plating, lost parts) that carries information without numbers.
+- **Candidate: two layers after a match:** a short summary for everyone, the full log for players who want it.
 - How detailed the data is directly sets the **inference gap** (see [Robots & Blueprints](robots-and-blueprints.md#the-inference-gap-key-dial-open)). Expect to tune it.

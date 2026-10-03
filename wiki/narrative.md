@@ -1,5 +1,7 @@
 # Narrative
 
+[Wiki home](README.md) · ← [Vision & Pillars](vision-and-pillars.md) · [Robots & Blueprints](robots-and-blueprints.md) →
+
 > Status: **Open.** This page collects themes, possibilities, and notes, not a fixed plot.
 
 ## Themes we're drawn to
@@ -41,3 +43,12 @@
 - Who is the player in this world?
 - What the arenas are for.
 - What caused the virus, and whether it is still out there.
+
+---
+
+**Related**
+
+- [Vision & Pillars](vision-and-pillars.md): the experience the story has to serve
+- [Open Questions](open-questions.md#narrative): the unresolved narrative questions
+
+[Wiki home](README.md) · ← [Vision & Pillars](vision-and-pillars.md) · [Robots & Blueprints](robots-and-blueprints.md) →

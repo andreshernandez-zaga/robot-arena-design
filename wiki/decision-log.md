@@ -1,6 +1,8 @@
 # Decision Log
 
-All decisions are **provisional** unless marked otherwise.
+[Wiki home](README.md) · ← [Open Questions](open-questions.md)
+
+All decisions are **provisional** unless marked otherwise. Unresolved items are tracked in [Open Questions](open-questions.md).
 
 | Date | Decision | Status |
 |---|---|---|
@@ -27,3 +29,12 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-03 | Robots carry many hidden numbers (genes) that resolve into a few readable stats | Provisional |
 | 2026-10-03 | Added an Inspirations page (Pokémon breeding, Diablo, Final Fantasy's Scan, MMO combat feedback, etc.) | Provisional |
 | 2026-10-03 | Scanning, visibility levels, inheritance tools, bonuses for distant lineages | Open |
+
+---
+
+**Related**
+
+- [Open Questions](open-questions.md): everything still undecided
+- [Vision & Pillars](vision-and-pillars.md) · [Robots & Blueprints](robots-and-blueprints.md) · [Crossing & Evolution](crossing-and-evolution.md) · [Matches & Pacing](matches-and-pacing.md) · [Progression & Memory](progression-and-memory.md): the pages these decisions live in
+
+[Wiki home](README.md) · ← [Open Questions](open-questions.md)

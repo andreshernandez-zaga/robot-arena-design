@@ -1,5 +1,7 @@
 # Progression & Memory
 
+[Wiki home](README.md) · ← [Matches & Pacing](matches-and-pacing.md) · [Inspirations](inspirations.md) →
+
 ## Limited memory (slots)
 
 - You can hold only a limited number of blueprints.
@@ -25,3 +27,14 @@
 ## Exact numbers
 
 All values (slots, reveals, crossings) will be decided during implementation.
+
+---
+
+**Related**
+
+- [Crossing & Evolution](crossing-and-evolution.md): what slots and crossings are spent on
+- [Matches & Pacing](matches-and-pacing.md): where blueprints are captured
+- [Risks & Critique](risks-and-critique.md#5-the-rich-get-richer): rich-get-richer, losing a favorite, self-play
+- [Open Questions](open-questions.md#progression): undecided progression questions
+
+[Wiki home](README.md) · ← [Matches & Pacing](matches-and-pacing.md) · [Inspirations](inspirations.md) →

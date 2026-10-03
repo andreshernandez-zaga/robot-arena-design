@@ -1,5 +1,7 @@
 # Robots & Blueprints
 
+[Wiki home](README.md) · ← [Narrative](narrative.md) · [Crossing & Evolution](crossing-and-evolution.md) →
+
 ## Blueprint (genotype)
 
 Every robot comes from a blueprint (a "plan"). It specifies:
@@ -87,3 +89,15 @@ Initial archetypes, roughly like chess pieces:
 ## Aging
 
 Robots do not age or degrade for now. Stat degradation over time could be added later if needed.
+
+---
+
+**Related**
+
+- [Crossing & Evolution](crossing-and-evolution.md): what happens to blueprints once you hold them
+- [Matches & Pacing](matches-and-pacing.md#what-a-match-shows): the match data that sets the inference gap
+- [Inspirations](inspirations.md#how-this-fits-the-three-layer-blueprint-model): how outside references map onto the layers
+- [Risks & Critique](risks-and-critique.md#2-readability-vs-expressiveness): readability, inference, visuals and leaks
+- [Open Questions](open-questions.md#blueprints): undecided blueprint questions
+
+[Wiki home](README.md) · ← [Narrative](narrative.md) · [Crossing & Evolution](crossing-and-evolution.md) →

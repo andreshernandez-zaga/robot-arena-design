@@ -1,5 +1,7 @@
 # Vision & Pillars
 
+[Wiki home](README.md) · [Narrative](narrative.md) →
+
 ## The fantasy
 
 You are a robot designer. Combat is your test bench. Over your lifetime as a player, you build up a small, personal set of designs shaped by every opponent you have faced.
@@ -33,3 +35,13 @@ You are a robot designer. Combat is your test bench. Over your lifetime as a pla
 - The mechanics and the story reinforce each other: scarce knowledge, contact through arenas, rebuilding robotics from fragments.
 - Players can grow attached to designs that are visibly *theirs*.
 - Experimenting with genetic programming is part of what makes this fun to build.
+
+---
+
+**Related**
+
+- [Narrative](narrative.md#why-the-premise-fits-the-mechanics): how story and mechanics reinforce each other
+- [Crossing & Evolution](crossing-and-evolution.md): the differentiator the pillars lean on
+- [Risks & Critique](risks-and-critique.md): where the pillars are most likely to break
+
+[Wiki home](README.md) · [Narrative](narrative.md) →

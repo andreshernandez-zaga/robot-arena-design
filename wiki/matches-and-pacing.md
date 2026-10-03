@@ -1,5 +1,7 @@
 # Matches & Pacing
 
+[Wiki home](README.md) · ← [Crossing & Evolution](crossing-and-evolution.md) · [Progression & Memory](progression-and-memory.md) →
+
 > We are deliberately keeping mechanics loose. The numbers below are illustrative only.
 
 ## Shape of a match
@@ -52,3 +54,15 @@
 - **Candidate: visible damage** (dented plating, lost parts) that carries information without numbers.
 - **Candidate: two layers after a match:** a short summary for everyone, the full log for players who want it.
 - How detailed the data is directly sets the **inference gap** (see [Robots & Blueprints](robots-and-blueprints.md#the-inference-gap-key-dial-open)). Expect to tune it.
+
+---
+
+**Related**
+
+- [Robots & Blueprints](robots-and-blueprints.md#the-inference-gap-key-dial-open): why match detail matters for hidden blueprints
+- [Progression & Memory](progression-and-memory.md#rewards-by-outcome): what winners and losers get afterward
+- [Inspirations](inspirations.md#everquests-consider-and-mmo-health-bars-graded-precision): sources for graded information
+- [Risks & Critique](risks-and-critique.md#9-async-matches-can-stall): stalling, leaks, number overload
+- [Open Questions](open-questions.md#squad--match): undecided match questions
+
+[Wiki home](README.md) · ← [Crossing & Evolution](crossing-and-evolution.md) · [Progression & Memory](progression-and-memory.md) →

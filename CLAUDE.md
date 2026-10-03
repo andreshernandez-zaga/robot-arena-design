@@ -14,4 +14,5 @@ This repo is a **concept-stage game design wiki**. There is no code yet.
 - All design content lives in `wiki/`. `wiki/README.md` is the index.
 - `scratchpad/` holds raw material (conversation transcripts, rough notes). Use it for context, but `wiki/` is the source of truth.
 - When new ideas come in, update the relevant page, `wiki/open-questions.md`, and `wiki/decision-log.md`.
+- Every wiki page has a nav bar under its H1 (Wiki home, previous, next), repeated at the bottom, plus a **Related** list. When adding a page, add it to the table in `wiki/README.md`, to the previous/next bars of its neighbors, and give it a Related list.
 - Write in English, even when the owner speaks Spanish.

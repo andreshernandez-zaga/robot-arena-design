@@ -9,6 +9,10 @@ Players design robot squads, test them against each other in asynchronous turn-b
 **Core sentence:** *You select by phenotype; you inherit genotype.*
 You choose what to cross based on how a robot looks and how it fought. What you actually get is its hidden blueprint.
 
+## Start here
+
+New to the project? Read in this order: [Vision & Pillars](vision-and-pillars.md) → [Robots & Blueprints](robots-and-blueprints.md) → [Crossing & Evolution](crossing-and-evolution.md) → [Matches & Pacing](matches-and-pacing.md). Then check [Risks & Critique](risks-and-critique.md) and [Open Questions](open-questions.md) for what is shaky. Every page links to its neighbors and to related pages at the bottom.
+
 ## Pages
 
 | Page | What it covers |
@@ -23,6 +27,11 @@ You choose what to cross based on how a robot looks and how it fought. What you 
 | [Risks & Critique](risks-and-critique.md) | Known risks and honest concerns |
 | [Open Questions](open-questions.md) | Everything still undecided |
 | [Decision Log](decision-log.md) | Provisional decisions and when they were made |
+
+## Elsewhere in the repo
+
+- [Project README](../README.md)
+- [Scratchpad](../scratchpad/README.md): raw conversation transcripts and rough notes. The wiki is the source of truth.
 
 ## Status conventions
 

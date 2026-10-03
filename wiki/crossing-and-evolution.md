@@ -1,5 +1,7 @@
 # Crossing & Evolution
 
+[Wiki home](README.md) · ← [Robots & Blueprints](robots-and-blueprints.md) · [Matches & Pacing](matches-and-pacing.md) →
+
 > This is the core of the game. If the scope has to shrink, this stays and other things go (even squads could become 1v1).
 
 ## Acquiring blueprints
@@ -79,3 +81,15 @@ A filter of some kind could still coexist with these, for example a minimum-viab
 - Starter archetype blueprints will probably leak (wikis, community).
 - Crossing quickly produces designs unique to each player, which keeps blind reveals meaningful.
 - Detailed match data can also leak hidden information through reverse-engineering (see [Matches & Pacing](matches-and-pacing.md#what-a-match-shows)).
+
+---
+
+**Related**
+
+- [Robots & Blueprints](robots-and-blueprints.md): the genotype/phenotype model crossing acts on
+- [Progression & Memory](progression-and-memory.md): slots and limits that constrain crossing
+- [Inspirations](inspirations.md#the-masuda-method-pokémon-crossing-with-distant-lineages): breeding references
+- [Risks & Critique](risks-and-critique.md#1-most-gp-crossovers-make-things-worse): bad offspring, rich-get-richer, pay-to-win
+- [Open Questions](open-questions.md#crossing): undecided crossing questions
+
+[Wiki home](README.md) · ← [Robots & Blueprints](robots-and-blueprints.md) · [Matches & Pacing](matches-and-pacing.md) →

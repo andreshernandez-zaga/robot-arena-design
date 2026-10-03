@@ -1,5 +1,7 @@
 # Risks & Critique
 
+[Wiki home](README.md) · ← [Inspirations](inspirations.md) · [Open Questions](open-questions.md) →
+
 Concerns are raised honestly so they can be addressed deliberately, not discovered late.
 
 ## 1. Most GP crossovers make things worse
@@ -57,3 +59,15 @@ If scanning (information as an ability) is too strong, every squad needs a hacke
 ## 14. Number overload on mobile
 
 Lots of numbers delight a minority of players and overwhelm the rest. Detail must be available, but hidden by default.
+
+---
+
+**Related**
+
+- [Crossing & Evolution](crossing-and-evolution.md): risks 1, 5, 6, 12
+- [Robots & Blueprints](robots-and-blueprints.md): risks 2, 3, 4, 7, 11
+- [Matches & Pacing](matches-and-pacing.md): risks 9, 11, 13, 14
+- [Progression & Memory](progression-and-memory.md): risks 5, 8, 10
+- [Open Questions](open-questions.md): where these concerns turn into decisions to make
+
+[Wiki home](README.md) · ← [Inspirations](inspirations.md) · [Open Questions](open-questions.md) →

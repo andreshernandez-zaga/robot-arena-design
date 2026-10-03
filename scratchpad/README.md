@@ -1,5 +1,7 @@
 # Scratchpad
 
+[← Wiki home](../wiki/README.md)
+
 Raw material: conversation transcripts, rough notes, half-formed ideas. Nothing here is authoritative. Once something is refined, it moves into `wiki/`.
 
 | File | What it is |

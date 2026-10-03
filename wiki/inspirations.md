@@ -1,5 +1,7 @@
 # Inspirations & References
 
+[Wiki home](README.md) · ← [Progression & Memory](progression-and-memory.md) · [Risks & Critique](risks-and-critique.md) →
+
 > Mechanics from other games that could inspire ours. These are sources of ideas, not decisions. Each entry says what the source does, what we might take from it, and where it could go wrong for us.
 
 ## The guiding principle these led to
@@ -98,3 +100,13 @@ The candidate model in [Robots & Blueprints](robots-and-blueprints.md) has hidde
 **One consequence to flag:** "a robot has a bunch of numbers" means most of the depth sits in the gene layer. That's fine as long as the stat card stays small. The design rule is **many genes, few expressed stats.**
 
 **One risk to flag:** when many genes add up into one stat, offspring cluster around the parents' average. That's the averaging problem again. Something has to break it: recessives, rare mutations, bonuses for distant lineages, or parts that pass to the offspring whole.
+
+---
+
+**Related**
+
+- [Robots & Blueprints](robots-and-blueprints.md): the model these references feed
+- [Crossing & Evolution](crossing-and-evolution.md#improving-the-odds-open-ideas-under-discussion): the ideas borrowed breeding mechanics feed
+- [Matches & Pacing](matches-and-pacing.md#how-much-to-reveal-provisional-direction-details-open): where information references land
+
+[Wiki home](README.md) · ← [Progression & Memory](progression-and-memory.md) · [Risks & Critique](risks-and-critique.md) →

@@ -16,3 +16,10 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-03 | Start with predefined archetype blueprints | Provisional |
 | 2026-10-03 | No robot aging for now | Provisional |
 | 2026-10-03 | Keep squads over 1v1 (leaning) | Open |
+| 2026-10-03 | Blueprints use a hybrid model: a cross-friendly structure underneath that resolves into something readable for the player (exact layers Open) | Provisional |
+| 2026-10-03 | Crossing produces several offspring; you see each one's form and plan before choosing what goes into a slot | Provisional |
+| 2026-10-03 | The opponent's plan is only revealed after you commit to it; no plan view straight from the match | Provisional |
+| 2026-10-03 | Simultaneous turns: both submit, then both watch the replay | Provisional |
+| 2026-10-03 | Matches show a replay plus data (damage, actions per turn, ability notices); after the match there's a replay, log or summary | Provisional |
+| 2026-10-03 | How to improve crossing odds (filter vs. directed breeding vs. locks vs. test runs) | Open |
+| 2026-10-03 | Size of the inference gap and how much numeric detail matches show | Open |

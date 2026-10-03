@@ -2,4 +2,4 @@
 
 Concept and design wiki for an asynchronous, turn-based robot-squad game built around crossing robot blueprints. Working title.
 
-Start at [wiki/README.md](wiki/README.md).
+Start at [wiki/README.md](wiki/README.md). Raw transcripts and notes are in [scratchpad/](scratchpad/).

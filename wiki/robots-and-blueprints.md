@@ -78,6 +78,17 @@ Initial archetypes, roughly like chess pieces:
 | Saboteur / hacker | Jams signals, disables or damages robots. *Idea:* can scan enemies to reveal hidden information, at the cost of action points |
 | Stealth | Fragile, wins through positioning and flanking |
 
+### Roles as budget posture (idea, Open)
+
+Roles could be defined by how they relate to their time budget, not only by stats and abilities. This only applies if unspent budget can be held back for reactions (see [Turn Mechanics](turn-mechanics.md)).
+
+- A **holder** (e.g. Tank) moves little and is dangerous to approach.
+- A **skirmisher** spends everything on movement and has no guard.
+- **Stealth** positions, then waits to ambush. It is the role fog supports most, and the one the information tension hits hardest.
+- The **hacker** pays budget for information (scanning).
+
+Reaction speed and budget size are natural per-robot traits. Whether they are genes, stats or both is Open.
+
 ### Fixed classes vs. emergent roles (Open)
 
 - Fixed classes are easier to understand.

@@ -27,3 +27,8 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-03 | Robots carry many hidden numbers (genes) that resolve into a few readable stats | Provisional |
 | 2026-10-03 | Added an Inspirations page (Pokémon breeding, Diablo, Final Fantasy's Scan, MMO combat feedback, etc.) | Provisional |
 | 2026-10-03 | Scanning, visibility levels, inheritance tools, bonuses for distant lineages | Open |
+| 2026-10-04 | Fog on the board (visibility by line of sight), partly to give Stealth roles a mechanism. What drives it and what the replay shows stay Open | Provisional |
+| 2026-10-04 | Unspent budget can be held back for reactions, so "not acting" is a decision. The owner finds it very interesting; the mechanism is Open | Open |
+| 2026-10-04 | Budget per robot instead of (or alongside) a squad pool. The owner wants to consider it | Open |
+| 2026-10-04 | Resolution order: steps interleave between sides vs. each side's list runs in turn | Open |
+| 2026-10-04 | Added a Turn Mechanics page separating orders, resolution, budget, readiness and information. Added X-COM, RoboSport and Laser Squad Nemesis to Inspirations | Provisional |

@@ -57,3 +57,15 @@ If scanning (information as an ability) is too strong, every squad needs a hacke
 ## 14. Number overload on mobile
 
 Lots of numbers delight a minority of players and overwhelm the rest. Detail must be available, but hidden by default.
+
+## 15. Readiness standoffs
+
+If holding budget back for reactions is the safest play, nobody advances. With async play and "last squad standing" (see #9), a standoff can last days. Something has to reward or force engagement: objectives, a shrinking arena, a turn limit. Only matters if readiness is adopted (see [Turn Mechanics](turn-mechanics.md)).
+
+## 16. Fog vs. the match as information
+
+Fog and stealth reduce what a replay shows about enemy robots, and the capture decision depends on that (see #3 and #11). Either stealthy designs get under-selected for crossing, or the replay shows more than the players saw while planning. The replay's perspective has to be decided deliberately.
+
+## 17. Planning load with per-robot budgets
+
+A budget, orders and a stance for each of 4–6 robots, planned blind on a phone, can break the relaxed-play pillar (see #14). Keep lists short, or give robots sensible defaults.

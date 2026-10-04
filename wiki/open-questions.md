@@ -13,6 +13,7 @@
 - [ ] Many genes, few stats: how do we keep offspring from averaging out?
 - [ ] Should blueprints have a budget (weight, power) that crossing must respect?
 - [ ] Do robots have their own control logic (reactions, passive behavior), or does the player control everything?
+- [ ] Are budget size and reaction speed per-robot traits? Genes, stats, or both?
 - [ ] How does a blueprint translate into visible form?
 - [ ] How does it translate into abilities and behavior?
 
@@ -36,6 +37,16 @@
 - [ ] What form does the post-match study take: replay, log, summary, or a per-robot scouting report?
 - [ ] How do async matches avoid stalling?
 - [ ] Board/terrain shape.
+- [ ] Budget scope: per robot, squad pool, or both? Continuous time costs or fixed action slots?
+- [ ] Do steps interleave (step 1 for both sides, then step 2) or does each side's whole list run in turn?
+- [ ] How are orders given: short queued lists, standing orders, or both? How long are the lists?
+- [ ] Readiness: can unspent budget be held back for reactions? How is it set in advance, given the player is not there?
+- [ ] Initiative: how are simultaneous conflicts decided (stat contest, fixed order)? How legible is it?
+- [ ] How do we stop readiness standoffs in async play?
+- [ ] Fog: what drives visibility (line of sight, facing, range)?
+- [ ] What does the replay show: each player's fogged view, or the whole arena? Does that differ during and after the match?
+- [ ] What counters stealth without making scanning mandatory?
+- [ ] Which game was the owner's first remembered Apple game? (RoboSport, Galactic Gladiators, other.) Low priority.
 
 ## Roles
 - [ ] Fixed classes vs. emergent roles beyond the starter archetypes?

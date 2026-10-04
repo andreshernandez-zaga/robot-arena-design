@@ -96,6 +96,27 @@ Evidence labels are explained in the [section README](README.md#evidence-labels)
 - **What we might take:** **standing orders as the way to get reactions into a blind, simultaneous system.** Order preview as a way to reduce the cost of blind mistakes.
 - **Watch out:** I have not checked how it handled fog, pacing or readability. Same designer as X-COM, so it is partly a lineage check.
 
+### Tactics Arena Online (Digital Seed Entertainment, 2003, Flash): one action per turn, per-unit recovery, facing as defense
+*The owner played it in the early 2000s. Search summaries only: the original sites were unreachable, so treat the unit numbers as unverified. Sources (not read in full): [rules guide](https://www.digisonline.com/tactics/guide/rules/), [Giant Bomb](https://www.giantbomb.com/games/3030-25056/), [StrategyWiki units](https://strategywiki.org/wiki/Tactics_Arena_Online/Units).*
+- **What it does:**
+  - Two players, 10 units each, on a grid. Chess-like. You win by destroying or **freezing** all of the opponent's mobile units, or by surrender.
+  - **One unit acts per turn:** move, move and attack, attack, or pass. Turns alternate. I found nothing about simultaneous resolution.
+  - **Per-unit recovery:** after acting, a unit cannot act again for a number of turns (1 for the Assassin; a five-turn recovery is given as an example).
+  - **Facing and blocking:** a unit's last command can be a turn. Attacks can be blocked outright (a miss), with a percentage that is halved from the side and zero from behind. Some attacks are unblockable. Reportedly, blocking chance rises after a unit is hit and falls after a successful block.
+  - **Classes with one signature rule.** Example: the Assassin hits all four neighbouring tiles, and below 5 HP can self-destruct for 99 unblockable damage. Reported stats: 35 HP, 4 movement, 70% front block.
+  - The developer, a one-person studio, abandoned it for reasons unknown. A community open-source HTML5 remake aims to keep the rules unchanged. There was a paid server ($5 a month) next to the free original.
+- **Not found:** fog or any hidden information, how the 10 units are chosen, board size, ladders.
+- **What we might take:**
+  - **Per-unit recovery as visible readiness.** Who is ready is public state, not a hidden initiative formula. A cleaner alternative to X-COM's reserve for async play.
+  - **Facing as defense** (front, side, back) instead of only vision. It gives facing a purpose without cones or fog. *(Idea, not TAO's: it could tie to robot plating, so a heavy front plate and a weak back would be visible in the form.)*
+  - **A disable win condition** ("freeze all mobile units"). It shortens matches, so it helps against stalls (risks 9 and 15), and it fits the saboteur role.
+  - **One signature rule per class.**
+- **Watch out:**
+  - Alternating, one-unit-per-turn play removes the guessing that the owner's first game had. With 10 units, a match is a long sequence.
+  - Percentage blocks add noise to what a replay tells you. That pushes against the inference-gap dial.
+  - The roster is fixed by the designer, so there is no crossing and no hidden blueprint. It benchmarks the turn rules only.
+  - The shutdown shows a paid server did not save it, but the cause is unknown, so do not read more into it.
+
 ### The owner's first remembered game (unidentified): predicting the opponent
 *From the owner's memory only.*
 - **What the owner remembers:** a 2D turn-based Apple game, played in the 90s on an older machine. Each side writes an ordered list ("move right, move right, face left, shoot..."), and the turn plays out with both sides' steps **interleaved**. Top-down building with walls, doors and hallways. One or two players. Part of the fun was predicting the other side and watching a shot go into an empty corridor. The theme (thieves and police, or something similar) may be a drifted memory.

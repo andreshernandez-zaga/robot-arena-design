@@ -46,6 +46,8 @@
 - [ ] Fog: what drives visibility (line of sight, facing, range)?
 - [ ] What does the replay show: each player's fogged view, or the whole arena? Does that differ during and after the match?
 - [ ] What counters stealth without making scanning mandatory?
+- [ ] Does facing matter defensively (front, side and back protection), not only for vision?
+- [ ] Is there a non-kill win condition (e.g. disabling all mobile robots) to shorten async matches?
 - [ ] Which game was the owner's first remembered Apple game? (RoboSport, Galactic Gladiators, other.) Low priority.
 
 ## Roles

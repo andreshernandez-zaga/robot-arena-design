@@ -41,3 +41,11 @@ Raw notes from the session where the owner tried to recall two old turn-based ga
 ## Source limits
 
 The network proxy blocked Wikipedia, MobyGames, Internet Archive, Applefritter and Wikiwand. Everything above comes from search-result summaries, which were sometimes noisy or wrong (one summary confidently picked Terrorist, which is real-time). The Galactic Gladiators manual is on the Internet Archive and would settle its mechanics. RoboSport's rules would be worth reading directly.
+
+## Tactics Arena Online (added by the owner as a reference)
+
+- Flash game by Digital Seed Entertainment (one person), 2003. Played by the owner in the early 2000s.
+- Everything comes from search summaries. Blocked by the proxy: JayIsGames, Codex Gamicus, TWCenter, StrategyWiki, Unknown Worlds forum, digisonline.com. Not blocked but only reachable as summaries: Giant Bomb, the rules guide.
+- Distinct things with similar names, not the same game: a Google Play app "Tactics Arena", and a GitHub project (DanAurea/Tactics-Arena) that recreates it in C.
+- Unconfirmed: board size, how teams of 10 are built, whether any turn timer existed, and the exact blocking rules.
+- Distilled in `wiki/explorations/turn-based-mechanics.md`.

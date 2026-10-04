@@ -1,6 +1,6 @@
 # Turn mechanics: reference hunt (2026-10-04)
 
-Raw notes from the session where the owner tried to recall two old turn-based games. Nothing here is authoritative. The distilled version lives in `wiki/turn-mechanics.md` and `wiki/inspirations.md`.
+Raw notes from the session where the owner tried to recall two old turn-based games. Nothing here is authoritative. The distilled version lives in `wiki/inspirations/turn-based-mechanics.md`.
 
 ## Game 1: unidentified (Apple, played in the 90s on an older machine)
 

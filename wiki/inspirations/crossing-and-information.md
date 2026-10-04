@@ -1,6 +1,6 @@
-# Inspirations & References
+# Crossing & Information
 
-> Mechanics from other games that could inspire ours. These are sources of ideas, not decisions. Each entry says what the source does, what we might take from it, and where it could go wrong for us.
+> Exploration, not decisions. Part of [Inspirations & Explorations](README.md). Mechanics from other games that could inspire how blueprints are crossed and how matches reveal information. Each entry says what the source does, what we might take from it, and where it could go wrong for us. These entries come from general knowledge of the games and were not checked against sources.
 
 ## The guiding principle these led to
 
@@ -80,46 +80,9 @@ Because crossing makes blueprints unique to each player, both can hold: communit
 - **What we might take:** the core "select by phenotype, inherit genotype" loop, and subtree swapping on the part tree.
 - **Watch out:** most crossovers produce worse offspring. Hence seeing several offspring before choosing, and inheritance tools.
 
-### X-COM: UFO Defense / UFO: Enemy Unknown (1994): time as a budget you can hold back
-*The owner played this in the late 90s. Confirmed as the game they remembered.*
-- **What it does** (confirmed against UFOpaedia's reaction-fire page):
-  - Every action costs Time Units (TUs). A soldier with none left cannot act until next turn.
-  - A unit can **reserve TUs** for reaction fire. If it sees an enemy act during the enemy's turn, it can fire.
-  - Who shoots first is a contest: reactions stat × (remaining TUs ÷ max TUs). Both humans and aliens use it.
-  - Moving while holding reserve can leave a soldier exposed and facing the wrong way.
-- **From memory, not verified:** turning costs TUs, vision is roughly a forward half-circle, there is no formal cover system (walls, darkness and smoke instead), and you only see what your soldiers see.
-- **What we might take:**
-  - **Unspent time as standing readiness.** "Not acting" becomes a decision, and the opponent's phase stops being dead time.
-  - **A stat-based initiative contest,** so a robot's character appears as moments in play.
-  - **A budget per unit,** which makes readiness local to each robot.
-  - **Fog and facing** as the basis for stealth roles.
-- **Watch out:** X-COM plays live, so the player is present at every interrupt. In async play reactions have to be standing orders resolved by the engine. Overwatch-style systems tend toward standoffs. As I remember it, the initiative formula felt opaque to many players. See [Turn Mechanics](turn-mechanics.md).
-
-### RoboSport (Maxis, 1991): robot squads, queued timed orders, simultaneous replay
-*Lead, not confirmed as a game the owner played. Details below come from a search summary only.*
-- **What it does:** you build teams of robots and program each one with point-and-click commands for up to about 15 seconds. Commands include moving, raising or lowering the head (which changes the field of view), firing at a spot, and scanning and firing if an enemy is seen. All players' orders then play out simultaneously. There are five robot types with different weapons. It was one of the first networked games to include replays. Platforms: Mac, Windows (and an Amiga version).
-- **Why it matters:** it matches the owner's first remembered game on mechanics (queued orders, interleaved playback, facing, conditional fire) and sits close to this game's theme. It may be that game, or the two memories may have merged.
-- **What we might take:** scan-and-fire as a stance. Facing through the head. Replay as a first-class feature.
-- **Watch out:** it is direct prior art for robot-squad tactics with simultaneous replay. Turn mechanics will not differentiate us; crossing has to. I have not confirmed the map layout (walls, doors, cover).
-
-### Laser Squad Nemesis (2002): blind simultaneous orders with standing stances
-*Per a search summary; not verified further. The year is later than the owner's "late 90s".*
-- **What it does:** each turn you give orders to your troops, preview their likely effects, and submit them to a server. Orders resolve simultaneously once both players have submitted. Options include direct fire, terrain fire and **opportunity fire**, and stances such as halt, retreat or continue when an enemy is spotted. Playable species include aliens. The lead designer, Julian Gollop, also designed X-COM and the original Laser Squad.
-- **What we might take:** **standing orders as the way to get reactions into a blind, simultaneous system.** Order preview as a way to reduce the cost of blind mistakes.
-- **Watch out:** I have not checked how it handled fog, pacing or readability. Same designer as X-COM, so it is partly a lineage check.
-
-### The owner's first remembered game (unidentified): predicting the opponent
-- **What the owner remembers:** a 2D turn-based Apple game, played in the 90s on an older machine. Each side writes an ordered list ("move right, move right, face left, shoot..."), and the turn plays out with both sides' steps **interleaved**. Top-down building with walls, doors and hallways. One or two players. Part of the fun was predicting the other side and watching a shot go into an empty corridor. The theme (thieves and police, or something similar) may be a drifted memory.
-- **Candidates:** RoboSport (best on mechanics, and fits better if it was a Mac). Galactic Gladiators (SSI, 1982): a planning phase then simultaneous action, per a search summary. Mission Escape! (CE Software, 1980): up to three commands per turn, but apparently single-player. None confirmed.
-- **What we might take:** the "catch" feeling. Interleaved resolution makes wrong guesses visible and a bit funny.
-- **Watch out:** do not design around details that only rest on memory. See `scratchpad/2026-10-04-turn-mechanics-reference-hunt.md`.
-
-### Already cited elsewhere in the wiki
-- **Hero Academy, Frozen Synapse, Into the Breach:** proven async and turn-based squad tactics. That part of our game is well-trodden ground; crossing is what sets it apart.
-
 ## How this fits the three-layer blueprint model
 
-The candidate model in [Robots & Blueprints](robots-and-blueprints.md) has hidden **genes**, a visible **part tree** and a readable **stat card**. The references fit it without changes, and each one lands on a specific layer:
+The candidate model in [Robots & Blueprints](../robots-and-blueprints.md) has hidden **genes**, a visible **part tree** and a readable **stat card**. The references fit it without changes, and each one lands on a specific layer:
 
 | Layer | What feeds it | Which inspiration |
 |---|---|---|

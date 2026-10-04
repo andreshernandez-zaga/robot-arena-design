@@ -32,3 +32,4 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-04 | Budget per robot instead of (or alongside) a squad pool. The owner wants to consider it | Open |
 | 2026-10-04 | Resolution order: steps interleave between sides vs. each side's list runs in turn | Open |
 | 2026-10-04 | Added a Turn Mechanics page separating orders, resolution, budget, readiness and information. Added X-COM, RoboSport and Laser Squad Nemesis to Inspirations | Provisional |
+| 2026-10-04 | Inspirations became a section of explorations organized by topic (crossing & information, turn-based mechanics). The Turn Mechanics page moved into it. Explorations are not decisions | Provisional |

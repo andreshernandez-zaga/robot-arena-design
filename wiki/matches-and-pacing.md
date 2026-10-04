@@ -7,7 +7,7 @@
 - Player vs. player.
 - Squads placed on a board or terrain, chess-like but not necessarily a grid.
 - Squad size: around 4–6 robots (Open). A 1v1 single-robot format was considered because crossing matters more than squad size.
-- Each turn grants a pool of actions (e.g. 10). Abilities cost different amounts (e.g. 3). You spend the pool across your whole squad. *(Squad pool vs. a budget per robot is Open. See [Turn Mechanics](turn-mechanics.md).)*
+- Each turn grants a pool of actions (e.g. 10). Abilities cost different amounts (e.g. 3). You spend the pool across your whole squad. *(Squad pool vs. a budget per robot is Open. See [Turn-Based Mechanics](inspirations/turn-based-mechanics.md).)*
 - Win condition: last squad standing.
 
 ## Why keep squads (leaning)
@@ -25,13 +25,13 @@
 
 - **Simultaneous (leaning):** both players submit, the game resolves the turn, and both watch the replay. The owner described turns this way ("once both players submit their turn, the game shows the replay"). It fits the "submit and see what happens" feeling.
 - **Alternating** (I move, then you move) is still possible if simultaneous resolution causes problems, e.g. confusing outcomes or hard-to-predict collisions.
-- The wider design space (how orders are given, whether steps interleave, holding budget back for reactions) is in [Turn Mechanics](turn-mechanics.md).
+- The wider design space (how orders are given, whether steps interleave, holding budget back for reactions) is in [Turn-Based Mechanics](inspirations/turn-based-mechanics.md).
 
 ## Fog on the board (Provisional, details Open)
 
 - The arena is not fully visible to both sides. What each robot can see depends on line of sight, and possibly on facing.
 - **Why:** it gives the Stealth archetype a real mechanism, and it gives scouting and scanning more meaning.
-- **Open:** what the replay shows (each player's fogged view, or the whole arena), and what counters stealth. See the tension with "every match is information" in [Turn Mechanics](turn-mechanics.md#1-fog-gives-stealth-roles-a-mechanism).
+- **Open:** what the replay shows (each player's fogged view, or the whole arena), and what counters stealth. See the tension with "every match is information" in [Turn-Based Mechanics](inspirations/turn-based-mechanics.md#1-fog-gives-stealth-roles-a-mechanism).
 
 ## What a match shows
 
@@ -54,7 +54,7 @@
 - **Generous numbers, partial reverse-engineering.** The owner's view, inspired by MMORPGs: seeing damage dealt and resisted, health and energy bars, and so on is part of the thrill. Players reverse-engineering things is the point, but it won't be everything.
 - What players should be able to work out: **the game's rules**. What they shouldn't: **one opponent's full blueprint from one match**.
 - *Superseded:* the earlier proposal "show outcomes, not formulas" was too restrictive.
-- **Candidate: levels of visibility.** Your own robots are fully visible. Enemy information comes as exact numbers, ranges, qualitative messages ("RESISTED", "CRITICAL") or not at all. See [Inspirations](inspirations.md#everquests-consider-and-mmo-health-bars-graded-precision).
+- **Candidate: levels of visibility.** Your own robots are fully visible. Enemy information comes as exact numbers, ranges, qualitative messages ("RESISTED", "CRITICAL") or not at all. See [Inspirations](inspirations/crossing-and-information.md#everquests-consider-and-mmo-health-bars-graded-precision).
 - **Candidate: scanning.** An ability, perhaps for the hacker, that spends action points to reveal more about an enemy.
 - **Candidate: visible damage** (dented plating, lost parts) that carries information without numbers.
 - **Candidate: two layers after a match:** a short summary for everyone, the full log for players who want it.

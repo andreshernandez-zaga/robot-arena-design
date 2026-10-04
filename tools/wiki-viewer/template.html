@@ -1,0 +1,350 @@
+<title>Robot Arena Wiki</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: file tree on the left, reading column in the middle, "on this page" rail on the right when wide; the tree becomes a drawer on phones. */
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --line: #d9dfeb;
+  --fg: #161c2b;
+  --muted: #566079;
+  --accent: #2457c5;
+  --accent-soft: #e4ecfb;
+  --note: #eef2fa;
+  --code: #edf0f7;
+  --prov-bg: #fbefcf;
+  --prov-fg: #7a5200;
+  --open-bg: #fbe3ea;
+  --open-fg: #9a1f45;
+  --done-bg: #dcf2e3;
+  --done-fg: #1d6a3a;
+  --scrim: rgba(10, 14, 25, 0.5);
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --topbar: 3.25rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1320;
+    --surface: #141b2b;
+    --line: #263149;
+    --fg: #e5e9f4;
+    --muted: #94a0ba;
+    --accent: #86a8ff;
+    --accent-soft: #1b2745;
+    --note: #151d31;
+    --code: #1a2336;
+    --prov-bg: #3a2e10;
+    --prov-fg: #f0c869;
+    --open-bg: #3d1a27;
+    --open-fg: #f4a3bb;
+    --done-bg: #14301f;
+    --done-fg: #8fd6a6;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1320;
+  --surface: #141b2b;
+  --line: #263149;
+  --fg: #e5e9f4;
+  --muted: #94a0ba;
+  --accent: #86a8ff;
+  --accent-soft: #1b2745;
+  --note: #151d31;
+  --code: #1a2336;
+  --prov-bg: #3a2e10;
+  --prov-fg: #f0c869;
+  --open-bg: #3d1a27;
+  --open-fg: #f4a3bb;
+  --done-bg: #14301f;
+  --done-fg: #8fd6a6;
+  color-scheme: dark;
+}
+
+body { background: var(--bg); color: var(--fg); font: 16px/1.65 var(--font-body); }
+a { color: var(--accent); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.app { display: grid; grid-template-columns: 17.5rem minmax(0, 1fr); min-height: 100vh; }
+
+/* ---------- file tree ---------- */
+.side {
+  position: sticky; top: env(safe-area-inset-top, 0px); align-self: start;
+  height: 100vh; height: 100dvh; overflow-y: auto;
+  background: var(--surface); border-right: 1px solid var(--line);
+  padding: 1.25rem 0.75rem 1.5rem;
+  display: flex; flex-direction: column; gap: 1.25rem;
+}
+#tree { display: grid; gap: 1.25rem; }
+.brand { padding: 0 0.5rem; }
+.brand small { display: block; font: 500 0.6875rem var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.brand strong { display: block; font: 700 1.375rem/1.2 var(--font-display); letter-spacing: -0.01em; margin-top: 0.15rem; }
+.group h2 { font: 500 0.6875rem var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.35rem; padding: 0 0.5rem; }
+.group ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; }
+.nav-item { display: block; padding: 0.38rem 0.5rem; border-radius: 4px; color: var(--fg); text-decoration: none; font-size: 0.9375rem; line-height: 1.35; }
+.nav-item:hover { background: var(--accent-soft); }
+.nav-item[aria-current="page"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.snapshot { margin: auto 0 0; padding: 0.75rem 0.5rem 0; border-top: 1px solid var(--line); font: 400 0.75rem/1.5 var(--font-mono); color: var(--muted); }
+
+/* ---------- top bar (phones only) ---------- */
+.topbar { display: none; position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; height: var(--topbar); align-items: center; gap: 0.75rem; padding-inline: 1rem; background: var(--surface); border-bottom: 1px solid var(--line); }
+.topbar button { display: inline-flex; align-items: center; gap: 0.5rem; font: 500 0.875rem var(--font-body); color: var(--fg); background: var(--accent-soft); border: 0; border-radius: 4px; padding: 0.4rem 0.65rem; cursor: pointer; }
+.topbar .here { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font: 500 0.8125rem var(--font-mono); color: var(--muted); }
+.scrim { position: fixed; inset: 0; background: var(--scrim); z-index: 29; }
+
+/* ---------- reading area ---------- */
+.main { min-width: 0; display: grid; grid-template-columns: minmax(0, 46rem) 13.5rem; justify-content: center; column-gap: 3rem; padding-inline: clamp(1rem, 4vw, 3rem); padding-block: 2.5rem 5rem; }
+.doc { min-width: 0; outline: none; }
+.crumb { display: flex; flex-wrap: wrap; gap: 0.35rem; font: 400 0.75rem var(--font-mono); color: var(--muted); }
+.crumb a { color: var(--muted); }
+.crumb a:hover { color: var(--accent); }
+
+.doc h1 { font: 700 clamp(2rem, 4.5vw, 2.75rem)/1.1 var(--font-display); letter-spacing: -0.02em; margin: 0.6rem 0 1rem; text-wrap: balance; }
+.doc h2 { font: 700 1.5rem/1.25 var(--font-display); letter-spacing: -0.01em; margin: 2.75rem 0 0.75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); text-wrap: balance; }
+.doc h3 { font: 600 1.2rem/1.3 var(--font-display); margin: 2rem 0 0.5rem; text-wrap: balance; }
+.doc h4 { font: 600 1rem/1.4 var(--font-body); color: var(--accent); margin: 1.5rem 0 0.4rem; }
+.doc h2, .doc h3, .doc h4 { scroll-margin-top: calc(var(--topbar) + 1rem + env(safe-area-inset-top, 0px)); }
+.doc p, .doc ul, .doc ol { margin: 0.75rem 0; }
+.doc ul, .doc ol { padding-left: 1.4rem; }
+.doc li { margin: 0.3rem 0; }
+.doc li > ul, .doc li > ol { margin: 0.25rem 0; }
+.doc li:has(> input[type="checkbox"]) { list-style: none; margin-left: -1.4rem; }
+.doc input[type="checkbox"] { accent-color: var(--accent); margin-right: 0.5rem; }
+.doc strong { font-weight: 600; }
+.doc hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0 1.25rem; }
+.doc blockquote { margin: 1.25rem 0; padding: 0.9rem 1.1rem; background: var(--note); border-block: 1px solid var(--line); color: var(--muted); }
+.doc blockquote p { margin: 0.4rem 0; }
+.doc code { font: 400 0.875em var(--font-mono); background: var(--code); padding: 0.1em 0.35em; border-radius: 3px; }
+.doc pre { overflow-x: auto; background: var(--code); padding: 0.9rem 1rem; border-radius: 4px; }
+.doc pre code { background: none; padding: 0; }
+.tablewrap { overflow-x: auto; margin: 1.25rem 0; border: 1px solid var(--line); background: var(--surface); }
+.doc table { border-collapse: collapse; width: 100%; min-width: 32rem; font-size: 0.9375rem; }
+.doc th { font: 500 0.6875rem var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); background: var(--note); }
+.doc td { padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.doc tr:last-child td { border-bottom: 0; }
+.doc td:first-child { white-space: nowrap; }
+.doc a.dead { color: var(--muted); text-decoration-style: dotted; cursor: not-allowed; }
+
+.navline { font: 500 0.8125rem/1.5 var(--font-mono); color: var(--muted); padding: 0.55rem 0; border-block: 1px solid var(--line); margin: 1.25rem 0; }
+.pill { display: inline-block; font: 500 0.75rem/1.4 var(--font-mono); padding: 0.1rem 0.55rem; border-radius: 999px; white-space: nowrap; }
+.pill.provisional { background: var(--prov-bg); color: var(--prov-fg); }
+.pill.open { background: var(--open-bg); color: var(--open-fg); }
+.pill.settled { background: var(--done-bg); color: var(--done-fg); }
+
+.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 1.5rem); align-self: start; max-height: calc(100vh - 3rem); overflow-y: auto; font-size: 0.8125rem; line-height: 1.4; }
+.toc h2 { font: 500 0.6875rem var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.6rem; }
+.toc ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
+.toc li.sub { padding-left: 0.8rem; }
+.toc a { color: var(--muted); text-decoration: none; }
+.toc a:hover { color: var(--accent); }
+
+@media (max-width: 1179px) {
+  .main { grid-template-columns: minmax(0, 46rem); }
+  .toc { display: none; }
+}
+@media (max-width: 859px) {
+  .app { grid-template-columns: minmax(0, 1fr); }
+  .topbar { display: flex; }
+  .main { padding-block: 1.5rem 4rem; }
+  .side {
+    position: fixed; inset: 0 auto 0 0; width: min(20rem, 86vw); max-height: none; z-index: 30;
+    height: auto; transform: translateX(-100%); transition: transform 0.2s ease;
+    padding-top: calc(1.25rem + env(safe-area-inset-top, 0px)); padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
+  }
+  body.nav-open .side { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .side { transition: none; } }
+</style>
+
+<div class="app">
+  <aside class="side" id="side" aria-label="Files">
+    <div class="brand"><small>Design wiki</small><strong>Robot Arena</strong></div>
+    <nav id="tree" aria-label="Wiki files"></nav>
+    <p class="snapshot" id="snapshot"></p>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+  <div>
+    <div class="topbar">
+      <button type="button" id="menu" aria-controls="side" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h12"/></svg>
+        Files
+      </button>
+      <span class="here" id="here"></span>
+    </div>
+    <div class="main">
+      <article class="doc" id="doc" tabindex="-1"></article>
+      <aside class="toc" id="toc" aria-label="On this page"></aside>
+    </div>
+  </div>
+</div>
+
+<script type="application/json" id="wiki-data">__DATA__</script>
+<script>
+(function () {
+  var DATA = JSON.parse(document.getElementById('wiki-data').textContent);
+  var FILES = DATA.files;
+  var DEFAULT = 'wiki/README.md';
+  var current = null;
+
+  var $doc = document.getElementById('doc');
+  var $toc = document.getElementById('toc');
+  var $tree = document.getElementById('tree');
+  var $here = document.getElementById('here');
+
+  function tokenOf(p) { return p.replace(/\//g, '~'); }
+  function pathOf(t) { return t.replace(/~/g, '/'); }
+  function slug(t) { return t.trim().toLowerCase().replace(/[^\p{L}\p{N}_\- ]/gu, '').replace(/ /g, '-'); }
+  function safeDecode(s) { try { return decodeURIComponent(s); } catch (e) { return s; } }
+
+  function resolve(base, href) {
+    try {
+      var u = new URL(href, 'https://x.invalid/' + base);
+      var p = safeDecode(u.pathname.slice(1));
+      if (!p || p.slice(-1) === '/') p += 'README.md';
+      return { path: p, frag: safeDecode(u.hash.slice(1)) };
+    } catch (e) { return null; }
+  }
+
+  function setNavOpen(open) {
+    document.body.classList.toggle('nav-open', open);
+    document.getElementById('scrim').hidden = !open;
+    document.getElementById('menu').setAttribute('aria-expanded', String(open));
+  }
+
+  function buildTree() {
+    DATA.nav.forEach(function (g) {
+      var sec = document.createElement('div');
+      sec.className = 'group';
+      var h = document.createElement('h2'); h.textContent = g.group; sec.appendChild(h);
+      var ul = document.createElement('ul');
+      g.items.forEach(function (it) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.className = 'nav-item'; a.textContent = it.label;
+        a.href = '#' + tokenOf(it.path); a.dataset.path = it.path;
+        li.appendChild(a); ul.appendChild(li);
+      });
+      sec.appendChild(ul); $tree.appendChild(sec);
+    });
+    document.getElementById('snapshot').textContent =
+      'Snapshot of ' + DATA.meta.branch + ' @ ' + DATA.meta.commit + ', ' + DATA.meta.date + '. The repo is the source of truth.';
+  }
+
+  function decorate(path) {
+    // heading ids, same scheme GitHub uses, so wiki anchors resolve
+    var seen = {};
+    $doc.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach(function (h) {
+      var s = slug(h.textContent), n = seen[s] || 0;
+      seen[s] = n + 1;
+      h.id = n ? s + '-' + n : s;
+    });
+    // tables scroll inside their own box
+    $doc.querySelectorAll('table').forEach(function (t) {
+      var w = document.createElement('div'); w.className = 'tablewrap';
+      t.parentNode.insertBefore(w, t); w.appendChild(t);
+    });
+    // status pills
+    $doc.querySelectorAll('td').forEach(function (td) {
+      var k = td.textContent.trim().toLowerCase();
+      if (k === 'provisional' || k === 'open' || k === 'settled') {
+        td.innerHTML = '<span class="pill ' + k + '">' + td.textContent.trim() + '</span>';
+      }
+    });
+    // nav lines
+    $doc.querySelectorAll('p').forEach(function (p) {
+      if (/^(←\s*)?Wiki home/.test(p.textContent) || /^Jump to:/.test(p.textContent)) p.classList.add('navline');
+    });
+    // links: internal pages become in-viewer navigation, anything else opens out
+    $doc.querySelectorAll('a[href]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (/^[a-z][a-z0-9+.-]*:/i.test(href)) { a.target = '_blank'; a.rel = 'noopener'; return; }
+      var r = resolve(path, href);
+      if (r && FILES[r.path]) {
+        a.dataset.path = r.path; a.dataset.frag = r.frag;
+        a.setAttribute('href', '#' + tokenOf(r.path));
+      } else {
+        a.classList.add('dead'); a.title = 'Not part of this snapshot';
+      }
+    });
+    // breadcrumb
+    var parts = path.split('/');
+    var crumb = document.createElement('nav'); crumb.className = 'crumb'; crumb.setAttribute('aria-label', 'Location');
+    parts.forEach(function (seg, i) {
+      if (i) crumb.appendChild(document.createTextNode('/'));
+      var last = i === parts.length - 1;
+      var idx = parts.slice(0, i + 1).join('/') + '/README.md';
+      if (!last && FILES[idx]) {
+        var a = document.createElement('a'); a.textContent = seg; a.dataset.path = idx; a.href = '#' + tokenOf(idx);
+        crumb.appendChild(a);
+      } else {
+        var s = document.createElement('span'); s.textContent = seg; crumb.appendChild(s);
+      }
+    });
+    $doc.insertBefore(crumb, $doc.firstChild);
+    // on this page
+    var heads = $doc.querySelectorAll('h2,h3');
+    $toc.innerHTML = '';
+    if (heads.length >= 3) {
+      var h = document.createElement('h2'); h.textContent = 'On this page'; $toc.appendChild(h);
+      var ul = document.createElement('ul');
+      heads.forEach(function (el) {
+        var li = document.createElement('li'); if (el.tagName === 'H3') li.className = 'sub';
+        var a = document.createElement('a'); a.textContent = el.textContent;
+        a.dataset.path = path; a.dataset.frag = el.id; a.href = '#' + tokenOf(path);
+        li.appendChild(a); ul.appendChild(li);
+      });
+      $toc.appendChild(ul);
+    }
+  }
+
+  function show(path) {
+    var f = FILES[path];
+    if (!f) return false;
+    current = path;
+    $doc.innerHTML = f.html;
+    decorate(path);
+    $tree.querySelectorAll('.nav-item').forEach(function (a) {
+      if (a.dataset.path === path) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+    $here.textContent = path;
+    return true;
+  }
+
+  function scrollToFrag(frag) {
+    var el = frag && document.getElementById(frag);
+    if (el) el.scrollIntoView({ block: 'start' });
+    else window.scrollTo(0, 0);
+  }
+
+  function go(path, frag) {
+    if (path !== current) {
+      if (!show(path)) return;
+      try { location.hash = tokenOf(path); } catch (e) { /* hash is optional */ }
+    }
+    scrollToFrag(frag);
+    setNavOpen(false);
+    if (!frag) $doc.focus({ preventScroll: true });
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-path]');
+    if (!a) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+    e.preventDefault();
+    go(a.dataset.path, a.dataset.frag || '');
+  });
+  document.getElementById('menu').addEventListener('click', function () { setNavOpen(!document.body.classList.contains('nav-open')); });
+  document.getElementById('scrim').addEventListener('click', function () { setNavOpen(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setNavOpen(false); });
+  window.addEventListener('hashchange', function () {
+    var p = pathOf(location.hash.slice(1));
+    if (FILES[p] && p !== current) { show(p); window.scrollTo(0, 0); setNavOpen(false); }
+  });
+
+  buildTree();
+  var start = pathOf(location.hash.slice(1));
+  show(FILES[start] ? start : DEFAULT);
+})();
+</script>

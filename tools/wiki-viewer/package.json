@@ -1,0 +1,8 @@
+{
+  "name": "wiki-viewer",
+  "private": true,
+  "type": "module",
+  "description": "Builds a single-file, clickable viewer of the repo's markdown. Not game code.",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": { "marked": "12.0.2" }
+}

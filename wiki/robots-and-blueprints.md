@@ -42,7 +42,7 @@ Crossing would work on the genes and the part tree, **never directly on the stat
 - Several hidden genes feed each visible stat, so crossing produces continuous, believable variation.
 - The stat card stays small; the detail is available but hidden by default.
 - *Risk:* when many genes add up into one stat, offspring cluster around the parents' average. Something must break it: recessives, rare mutations, bonuses for distant lineages, or parts that pass to the offspring whole.
-- *Possible flavor:* parts as base + affixes with hidden tiers, as in Diablo. See [Inspirations](inspirations/crossing-and-information.md).
+- *Possible flavor:* parts as base + affixes with hidden tiers, as in Diablo. See [Benchmarks](explorations/crossing-and-information.md).
 
 #### The inference gap (key dial, Open)
 
@@ -80,7 +80,7 @@ Initial archetypes, roughly like chess pieces:
 
 ### Roles as budget posture (idea, Open)
 
-Roles could be defined by how they relate to their time budget, not only by stats and abilities. This only applies if unspent budget can be held back for reactions (see [Turn-Based Mechanics](inspirations/turn-based-mechanics.md)).
+Roles could be defined by how they relate to their time budget, not only by stats and abilities. This only applies if unspent budget can be held back for reactions (see [Turn-Based Mechanics](explorations/turn-based-mechanics.md)).
 
 - A **holder** (e.g. Tank) moves little and is dangerous to approach.
 - A **skirmisher** spends everything on movement and has no guard.

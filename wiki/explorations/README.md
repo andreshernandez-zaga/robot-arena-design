@@ -1,6 +1,11 @@
-# Inspirations & Explorations
+# Explorations & Benchmarks
 
 > Everything in this section is exploration. It feeds the design pages but decides nothing. A decision only counts once it is in the [Decision Log](../decision-log.md) and the relevant design page.
+
+## Two kinds of content
+
+- **Exploration:** our own thinking. A map of the design space, ideas worth keeping, and the tensions between them.
+- **Benchmark:** an existing game or field we measure our ideas against. Each entry says what it does, what we might take, and what to watch out for.
 
 ## Topics
 
@@ -11,13 +16,13 @@
 
 ## How a topic page is built
 
-1. **Where we are.** The guiding principle or a map of the design space.
-2. **References.** One entry per source game or field: what it does, what we might take, what to watch out for.
-3. **How it lands.** Which design page or layer each idea feeds (the crossing page has a fit table, the turn page has ideas worth keeping and a suggested order).
+1. **Exploration.** The guiding principle, or a map of the design space and the ideas worth keeping.
+2. **Benchmarks.** One entry per source game or field.
+3. **How it lands.** Which design page or layer each idea feeds (the crossing page has a fit table, the turn page has a suggested order for settling things).
 
 ## Evidence labels
 
-Claims about source games are easy to get wrong, so newer entries say how sure we are:
+Claims about benchmark games are easy to get wrong, so newer entries say how sure we are:
 
 - **Confirmed:** checked against a reliable page.
 - **From memory:** recalled, not checked.
@@ -28,6 +33,6 @@ The entries on the crossing page predate these labels. They come from general kn
 
 ## Adding to this section
 
-- A new reference goes on the topic page it informs. If no topic fits, add a topic page and a row in the table above.
+- A new benchmark goes on the topic page it informs. If no topic fits, add a topic page and a row in the table above.
 - Raw research notes (how we found something, what we could not verify) go in [`scratchpad/`](../../scratchpad/README.md).
-- When a reference changes a design page or a decision, link both ways and log the decision.
+- When a benchmark or exploration changes a design page or a decision, link both ways and log the decision.

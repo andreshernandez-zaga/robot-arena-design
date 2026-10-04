@@ -54,7 +54,7 @@ This also largely addresses the "most crossovers are worse" risk, since players 
 - **Bonuses for distant lineages** (inspired by the Masuda method): crossing with a lineage far from yours yields more variation or rarer traits. It fits the narrative and works against everyone converging on the same design. *Open:* how to measure lineage distance.
 - **Abilities you can only get by crossing** (inspired by Pokémon's egg moves): this strengthens PvP as the source of new material.
 
-See [Inspirations](inspirations/crossing-and-information.md) for sources and caveats.
+See [Benchmarks](explorations/crossing-and-information.md) for sources and caveats.
 
 A filter of some kind could still coexist with these, for example a minimum-viability floor rather than an above-average threshold.
 

@@ -19,7 +19,7 @@ You choose what to cross based on how a robot looks and how it fought. What you 
 | [Crossing & Evolution](crossing-and-evolution.md) | How designs are acquired, crossed, and evolved |
 | [Matches & Pacing](matches-and-pacing.md) | The arena, turns, async play, match readability |
 | [Progression & Memory](progression-and-memory.md) | Slots, rewards for winners and losers, self-play |
-| [Inspirations & Explorations](inspirations/README.md) | Explorations and references by topic, not decisions: [crossing & information](inspirations/crossing-and-information.md), [turn-based mechanics](inspirations/turn-based-mechanics.md) |
+| [Explorations & Benchmarks](explorations/README.md) | Our explorations of the design space and the existing games we measure them against, by topic. Not decisions: [crossing & information](explorations/crossing-and-information.md), [turn-based mechanics](explorations/turn-based-mechanics.md) |
 | [Risks & Critique](risks-and-critique.md) | Known risks and honest concerns |
 | [Open Questions](open-questions.md) | Everything still undecided |
 | [Decision Log](decision-log.md) | Provisional decisions and when they were made |

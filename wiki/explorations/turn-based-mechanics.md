@@ -1,10 +1,10 @@
 # Turn-Based Mechanics
 
-> Exploration, not decisions. Part of [Inspirations & Explorations](README.md). Mechanics and numbers are illustrative.
+> Exploration, not decisions. Part of [Explorations & Benchmarks](README.md). Mechanics and numbers are illustrative.
 
 ## Where we are
 
-[Matches & Pacing](../matches-and-pacing.md) says turns are simultaneous (Provisional) and that a pool of actions is spent across the squad (illustrative). Those two lines hide several separate choices. This page pulls them apart so each can be decided on its own, then lists the games that inform each one.
+[Matches & Pacing](../matches-and-pacing.md) says turns are simultaneous (Provisional) and that a pool of actions is spent across the squad (illustrative). Those two lines hide several separate choices. This page pulls them apart so each can be decided on its own, then measures them against existing games.
 
 It started from the owner's memories of two old games. What felt good in them was not "turn-based" in general. It was a few specific things:
 
@@ -64,7 +64,7 @@ It started from the owner's memories of two old games. What felt good in them wa
 4. **Pressure to engage.** What stops a readiness standoff in async play.
 5. **Order form.** How long the lists are and what the standing orders are, once 2 and 3 are known.
 
-## References
+## Benchmarks
 
 Evidence labels are explained in the [section README](README.md#evidence-labels).
 

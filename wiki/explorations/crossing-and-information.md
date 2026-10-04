@@ -1,6 +1,6 @@
 # Crossing & Information
 
-> Exploration, not decisions. Part of [Inspirations & Explorations](README.md). Mechanics from other games that could inspire how blueprints are crossed and how matches reveal information. Each entry says what the source does, what we might take from it, and where it could go wrong for us. These entries come from general knowledge of the games and were not checked against sources.
+> Exploration, not decisions. Part of [Explorations & Benchmarks](README.md). The benchmarks here are games and fields that handle inheritance, hidden information and feedback in ways we can measure our ideas against. Each entry says what the source does, what we might take from it, and where it could go wrong for us. These entries come from general knowledge of the games and were not checked against sources.
 
 ## The guiding principle these led to
 
@@ -11,7 +11,7 @@
 
 Because crossing makes blueprints unique to each player, both can hold: community databases can document the rules but not *your* robot. *(Provisional; replaces the earlier "outcomes, not formulas" proposal.)*
 
-## References
+## Benchmarks
 
 ### Pokémon breeding: hidden values and inheritance
 - **What it does:** each Pokémon has hidden per-individual values (IVs). Two that look the same can differ underneath. Players built calculators to infer them from visible stats. Held items let breeders pass more of the parents' hidden values on, or fix one trait. Some moves ("egg moves") can only be inherited, never learned.
@@ -82,9 +82,9 @@ Because crossing makes blueprints unique to each player, both can hold: communit
 
 ## How this fits the three-layer blueprint model
 
-The candidate model in [Robots & Blueprints](../robots-and-blueprints.md) has hidden **genes**, a visible **part tree** and a readable **stat card**. The references fit it without changes, and each one lands on a specific layer:
+The candidate model in [Robots & Blueprints](../robots-and-blueprints.md) has hidden **genes**, a visible **part tree** and a readable **stat card**. The benchmarks fit it without changes, and each one lands on a specific layer:
 
-| Layer | What feeds it | Which inspiration |
+| Layer | What feeds it | Which benchmark |
 |---|---|---|
 | **Genes** (hidden) | Many numbers per robot, hidden per-individual values, rolled affix tiers, maybe recessives | Pokémon IVs, Diablo affixes |
 | **Part tree** (visible form) | Parts as base + affixes, subtree swapping, visible damage | Diablo, genetic programming, Monster Hunter |

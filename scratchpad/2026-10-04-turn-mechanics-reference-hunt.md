@@ -49,3 +49,11 @@ The network proxy blocked Wikipedia, MobyGames, Internet Archive, Applefritter a
 - Distinct things with similar names, not the same game: a Google Play app "Tactics Arena", and a GitHub project (DanAurea/Tactics-Arena) that recreates it in C.
 - Unconfirmed: board size, how teams of 10 are built, whether any turn timer existed, and the exact blocking rules.
 - Distilled in `wiki/explorations/turn-based-mechanics.md`.
+
+## Tactics Core (added by the owner, 2026-10-05)
+
+- Owner's link: kongregate.com/en/games/digitalseedent/tactics-core-demo (blocked by the proxy, not opened). Owner's note: one player turn at a time.
+- From search summaries: a Flash strategy-RPG engine by DigiS (Digital Seed), Flash MX / Flash 6 ActionScript, 2003, with depth layering and AI for enemy or guest units. Mirrors seen in results: Flash Museum, Internet Archive item `1100_tactics_core`, FlashArch, GameYum.
+- A separate Kongregate listing "Tactics Core" by another uploader (earthbound_lucas) also turned up, probably a re-upload.
+- Not the game referenced earlier (that was Tactics Arena Online). Relationship between the two is unconfirmed.
+- Distilled in `wiki/explorations/turn-based-mechanics.md`.

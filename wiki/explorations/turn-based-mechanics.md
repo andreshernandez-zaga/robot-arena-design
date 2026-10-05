@@ -117,6 +117,14 @@ Evidence labels are explained in the [section README](README.md#evidence-labels)
   - The roster is fixed by the designer, so there is no crossing and no hidden blueprint. It benchmarks the turn rules only.
   - The shutdown shows a paid server did not save it, but the cause is unknown, so do not read more into it.
 
+### Tactics Core (Digital Seed Entertainment, 2003, Flash): a strategy-RPG engine, one player acts at a time
+*Lead. The owner shared the [Kongregate demo](https://www.kongregate.com/en/games/digitalseedent/tactics-core-demo). I could not open it (blocked), so this is from search summaries and the owner's note. Other sources, not read in full: [Flash Museum](https://flashmuseum.org/tactics-core/), [Internet Archive](https://archive.org/details/1100_tactics_core).*
+- **What it is:** a Flash engine and demo for strategy RPGs, by what appears to be the same developer as Tactics Arena Online (the Kongregate username matches; not confirmed). Reported: built with Flash MX and Flash 6 ActionScript, released in 2003, with dynamic 3D depth layering and AI logic for enemy or guest (allied) units.
+- **Turn flow (owner's note):** one player acts at a time. Not confirmed from a source.
+- **Is it the game cited earlier?** No. The earlier reference is Tactics Arena Online. This is a separate project from the same developer and the same year. Whether the two share an engine is unconfirmed.
+- **What we might take:** little is confirmed yet. The one thing to check is how it drives enemy and allied units with AI logic, which touches the open question of whether robots have their own control logic.
+- **Watch out:** a different Kongregate listing titled "Tactics Core" by another uploader exists and may be a re-upload. Do not mix the two. Adds nothing to the turn-order axes beyond what Tactics Arena Online already shows.
+
 ### The owner's first remembered game (unidentified): predicting the opponent
 *From the owner's memory only.*
 - **What the owner remembers:** a 2D turn-based Apple game, played in the 90s on an older machine. Each side writes an ordered list ("move right, move right, face left, shoot..."), and the turn plays out with both sides' steps **interleaved**. Top-down building with walls, doors and hallways. One or two players. Part of the fun was predicting the other side and watching a shot go into an empty corridor. The theme (thieves and police, or something similar) may be a drifted memory.

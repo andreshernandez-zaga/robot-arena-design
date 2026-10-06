@@ -57,3 +57,12 @@ The network proxy blocked Wikipedia, MobyGames, Internet Archive, Applefritter a
 - A separate Kongregate listing "Tactics Core" by another uploader (earthbound_lucas) also turned up, probably a re-upload.
 - Not the game referenced earlier (that was Tactics Arena Online). Relationship between the two is unconfirmed.
 - Distilled in `wiki/explorations/turn-based-mechanics.md`.
+
+## RoboSport (Maxis), checked 2026-10-06
+
+- Blocked by the proxy: Wikipedia, Giant Bomb, MobyGames, Maxis wiki, Compute! archive, itch.io (mini RoboSport), stonedachshund.com (remake manual). Everything comes from search summaries.
+- Consistent across summaries: 1991, Edward Kilham, Maxis; Mac and Windows 3.0, Amiga 1992; up to four teams of up to eight robots; 15-second default time per robot; commands to move, raise or lower the head, fire at a spot, scan and fire if seen; simultaneous playback as a "movie"; early replays and network play; modes survival, capture the flag, hostage, treasure hunt, baseball; four AI levels; 24 maps (eight sizes, three tilesets: suburbs, rubble, computer).
+- Conflicts: four kinds of robot (rifle, automatic, burst, missile launcher) vs five types; Computer Gaming World 2/5 vs praise for the Windows version.
+- Contamination: one summary described "10 action steps per turn", one step per square, and scan along N/S/E/W lines. That matches the floybix "mini RoboSport" remake (and a separate "RoboSport REMAKE" manual), not the original. Left out of the wiki.
+- My earlier guess at robot names (Scout, Sniper, Gunner, Bazooka) is unconfirmed. Not used.
+- Distilled in `wiki/explorations/turn-based-mechanics.md`.

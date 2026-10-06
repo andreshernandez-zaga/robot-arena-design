@@ -48,6 +48,7 @@
 - [ ] What counters stealth without making scanning mandatory?
 - [ ] Does facing matter defensively (front, side and back protection), not only for vision?
 - [ ] Is there a non-kill win condition (e.g. disabling all mobile robots) to shorten async matches?
+- [ ] Are there match objectives beyond last squad standing (flag, hostage, treasure) to keep async matches moving?
 - [ ] Which game was the owner's first remembered Apple game? (RoboSport, Galactic Gladiators, other.) Low priority.
 
 ## Roles

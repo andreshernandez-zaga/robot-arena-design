@@ -84,11 +84,21 @@ Evidence labels are explained in the [section README](README.md#evidence-labels)
 - **Watch out:** X-COM plays live, so the player is present at every interrupt. In async play reactions have to be standing orders resolved by the engine. Overwatch-style systems tend toward standoffs. As I remember it, the initiative formula felt opaque to many players.
 
 ### RoboSport (Maxis, 1991): robot squads, queued timed orders, simultaneous replay
-*Lead, not confirmed as a game the owner played. Details below come from a search summary only.*
-- **What it does:** you build teams of robots and program each one with point-and-click commands for up to about 15 seconds. Commands include moving, raising or lowering the head (which changes the field of view), firing at a spot, and scanning and firing if an enemy is seen. All players' orders then play out simultaneously. There are five robot types with different weapons. It was one of the first networked games to include replays. Platforms: Mac, Windows (and an Amiga version).
-- **Why it matters:** it matches the owner's first remembered game on mechanics (queued orders, interleaved playback, facing, conditional fire) and sits close to this game's theme. It may be that game, or the two memories may have merged.
-- **What we might take:** scan-and-fire as a stance. Facing through the head. Replay as a first-class feature.
-- **Watch out:** it is direct prior art for robot-squad tactics with simultaneous replay. Turn mechanics will not differentiate us; crossing has to. I have not confirmed the map layout (walls, doors, cover).
+*Search summaries only. Wikipedia, Giant Bomb, MobyGames and the Compute! review were unreachable, so treat the details as unverified. Sources, not read in full: [Wikipedia](https://en.wikipedia.org/wiki/RoboSport), [Compute! review](https://www.atarimagazines.com/compute/issue149/122_RoboSport_for_Window.php), [Giant Bomb](https://www.giantbomb.com/robosport/3030-19320/). Lead as the owner's first remembered game; not confirmed.*
+- **What it is:** a turn-based tactics game by Edward Kilham, published by Maxis for Mac and Windows 3.0 in 1991, converted to the Amiga in 1992. Up to four teams of up to eight robots each, human or computer. Computer robots have four AI levels, from "stupid" to "ferocious".
+- **How a turn works:** every player programs every robot, then all programs play out simultaneously. Each robot has a time budget (15 seconds by default), and each order uses part of it. Commands include moving, raising or lowering the head (which changes the field of view), firing at a spot, and scanning and firing if an enemy is seen.
+- **Replay and network:** after orders are in, the game plays the result as a "movie". It is reported as one of the first games with replays of finished matches, and one of the first with network play (AppleTalk on Mac, NetBIOS on PC, TCP/IP on Amiga).
+- **Robots:** each kind carries a different weapon: rifle, automatic gun, burst gun, missile launcher. One summary says four kinds, another five. Names and stats are unconfirmed.
+- **Maps and modes:** 24 maps (eight sizes across three tilesets: suburbs, rubble, computer). Modes are survival, capture the flag, hostage, treasure hunt and baseball (touch all four bases).
+- **Reception:** mixed. Dragon gave it 5 of 5. One summary gives Computer Gaming World 2 of 5; another says it praised the Windows version. Unresolved.
+- **Not confirmed:** the exact command list and time costs, how facing and scanning work, whether the maps have walls and doors (the "suburbs" set suggests buildings), and the damage and cover rules.
+- **Why it matters:** it appears to touch all five axes above: blind queued orders (A), interleaved simultaneous resolution (B), a per-robot time budget with continuous costs (C), scan-and-fire as a standing reaction (D), and head direction changing the field of view (E). It also matches the owner's first remembered game on mechanics. The "suburbs" maps fit the building memory, but robots instead of thieves remain a mismatch.
+- **What we might take:**
+  - **A per-robot time budget with continuous costs.** A worked example of axis C.
+  - **Scan-and-fire as a stance:** a standing reaction set in advance (axis D), which suits async play.
+  - **Objective modes** (flag, hostage, treasure) as pressure to engage, against standoffs and stalls (risks 9 and 15).
+  - **Replay as a core feature,** and **computer opponents with difficulty levels** for practice.
+- **Watch out:** direct prior art for robot-squad tactics with simultaneous replay. The turn mechanics will not set us apart; crossing has to. Two remakes exist ("mini RoboSport" and a "RoboSport REMAKE" manual), and one search summary mixed their rules (10 action steps, one step per square, scanning along a straight line) into the original. I left those out.
 
 ### Laser Squad Nemesis (2002): blind simultaneous orders with standing stances
 *Search summary; not verified further. The year is later than the owner's "late 90s".*
@@ -128,7 +138,7 @@ Evidence labels are explained in the [section README](README.md#evidence-labels)
 ### The owner's first remembered game (unidentified): predicting the opponent
 *From the owner's memory only.*
 - **What the owner remembers:** a 2D turn-based Apple game, played in the 90s on an older machine. Each side writes an ordered list ("move right, move right, face left, shoot..."), and the turn plays out with both sides' steps **interleaved**. Top-down building with walls, doors and hallways. One or two players. Part of the fun was predicting the other side and watching a shot go into an empty corridor. The theme (thieves and police, or something similar) may be a drifted memory.
-- **Candidates:** RoboSport (best on mechanics, and fits better if it was a Mac). Galactic Gladiators (SSI, 1982): a planning phase then simultaneous action, per a search summary. Mission Escape! (CE Software, 1980): up to three commands per turn, but apparently single-player. None confirmed.
+- **Candidates:** RoboSport (best on mechanics, fits better if it was a Mac, and its "suburbs" maps could be the buildings). Galactic Gladiators (SSI, 1982): a planning phase then simultaneous action, per a search summary. Mission Escape! (CE Software, 1980): up to three commands per turn, but apparently single-player. None confirmed.
 - **What we might take:** the "catch" feeling. Interleaved resolution makes wrong guesses visible and a bit funny.
 - **Watch out:** do not design around details that only rest on memory. See `scratchpad/2026-10-04-turn-mechanics-reference-hunt.md`.
 
@@ -137,4 +147,4 @@ Evidence labels are explained in the [section README](README.md#evidence-labels)
 
 ## Note on prior art
 
-If the RoboSport summary is accurate, simultaneous robot-squad tactics with queued orders and replays already exists. That fits [Vision & Pillars](../vision-and-pillars.md): turn mechanics are proven and common. Crossing is what sets this game apart, so the turn mechanics should be chosen for fit, not for novelty.
+If the RoboSport summaries are accurate, it already covers all five axes above: simultaneous robot-squad tactics with queued, timed orders, conditional fire and replays. That fits [Vision & Pillars](../vision-and-pillars.md): turn mechanics are proven and common. Crossing is what sets this game apart, so the turn mechanics should be chosen for fit, not for novelty.

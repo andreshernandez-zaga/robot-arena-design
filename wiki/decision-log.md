@@ -62,3 +62,6 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-26 | The pool counts orders, not tempos. Robots act in tandem on their own tracks; tempos matter per robot. Resolves the Open row above | Provisional |
 | 2026-10-26 | Defensive reactions are free to start (no actions spent). Alternative kept: spend from the next turn's pool | Provisional |
 | 2026-10-26 | Turn length starts at 16 tempos. Starting values live in a Tuning Values page to tweak during game-testing | Provisional |
+| 2026-10-26 | Defense must not be too strong: one reaction per robot per turn; the default reaction has a relatively low chance of working; reactions need the robot to perceive the attacker (fog, line of sight) | Provisional |
+| 2026-10-26 | Initiative model: a score from stats and situation that orders actions within a tempo and modifies reaction checks (Claude's proposal) | Open |
+| 2026-10-26 | Build a paper-playtest artifact in the repo, driven by the settled rules it tests, once the model is settled | Provisional |

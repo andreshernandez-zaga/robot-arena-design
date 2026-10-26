@@ -66,10 +66,12 @@ Every order spends actions from the pool and takes time in tempos. Both are deta
 - If nothing triggers the robot, saved actions are **lost**. That is the price of waiting.
 - **Autonomy.** Reactions happen without the player, so robots seem to act on their own. The owner finds that attractive (see [Where it could become ours](#where-it-could-become-ours)).
 - **Defensive reactions are free** to start (owner, 2026-10-26). A robot dodges or parries what it faces without spending actions. That gives robots a sense of autonomy, and leaves the player to care about the strategic maneuvers. Alternative kept for later: a defensive reaction spends actions from the next turn's pool.
-- **Guardrails if free defense proves too strong** (candidates, Claude's suggestion):
-  - **Arc:** full chance from the front, worse from the side, none from the back. Flanking is the answer to a defender.
-  - **Time:** free in actions, not in time. The reaction takes 1 tempo on the robot's own track, which pushes its next order back (and can push its last order past the end of the turn).
-  - **Cap:** a limit on free defensive reactions per robot per turn, as a tuning value.
+- **Defense must not be too strong** (owner, 2026-10-26). Settled guardrails:
+  - **One reaction per robot per turn.** A robot attacked by two opponents can only answer one of them, so ganging up works. This helps tactics.
+  - **The default reaction is weak.** Abilities have to be designed so that a basic dodge or parry has a relatively low chance of working. Better reactions come from stats and abilities.
+  - **Fog gates reactions.** A robot can face the right way and still not react, because it never noticed an attacker outside its line of sight.
+  - **Arc:** full chance from the front, worse from the side, none from the back.
+- Candidate guardrail (Claude's suggestion): free in actions, not in time. The reaction takes 1 tempo on the robot's own track, which pushes its next order back.
 - **Where saved actions come from (Open).** Three models:
   - **Held per robot.** Saved actions belong to one robot. Precise, but the player has to guess which robot will be attacked.
   - **Shared reserve.** The player leaves part of the pool unspent, and any waiting robot can draw on it. Less planning, but very flexible defense, which can push toward standoffs.
@@ -78,10 +80,18 @@ Every order spends actions from the pool and takes time in tempos. Both are deta
   The owner's example ("keep the 3 remaining actions" on one robot) reads like holding them per robot, or the mix.
 - Open: can a reaction trigger another reaction? Claude's lean: no, to keep the replay readable.
 
-### Initiative
-- When two robots act in the same tempo, or an attack meets a waiting robot, an **initiative contest** decides what happens first.
-- Inputs, conceptually: the robots' stats (for example agility), whether each faces the other, and whether either is waiting. Small stat differences could decide the order within a tempo (see Granularity above).
-- Open: a fixed comparison or a roll. A D&D-style passive value is one option (see [Stats & Resolution](explorations/stats-and-resolution.md)).
+### Initiative (proposal, Open)
+Initiative answers "who is quicker right now". Proposal (Claude's, for the owner to settle):
+- **A score per robot.** A base from its stats (an agility or reflex type of stat; stats not settled), plus situational modifiers:
+  - facing the other robot raises it; being approached from the side lowers it
+  - waiting (holding actions, or a stance) raises it
+  - surprise: an attacker the defender could not see until the attack began gets a bonus
+  - later, weight or damage could lower it
+- **Role 1: order within a tempo.** When two things happen in the same tempo, the higher score goes first. There is no roll, so the order can be predicted from the plan. Ties: both happen at once, a trade.
+- **Role 2: reacting in time.** A reaction is a check with a low base chance, improved by the defender's initiative edge over the attacker and by reaction abilities. In D&D terms, situations give advantage or disadvantage instead of many small numbers (see [Stats & Resolution](explorations/stats-and-resolution.md)).
+- **Gates before any check.** The defender must have perceived the attacker (fog, line of sight), must still have its one reaction this turn, and the attack must come from the front or side.
+- **Choosing which attack to answer.** With two incoming attacks and one reaction, something has to choose: the first one by initiative, the most dangerous one, or the robot's stance and instinct. Candidate: stance and instinct, which adds to the sense of autonomy.
+- **Why this keeps defense in check.** Most robots defend poorly by default. Attackers can win initiative by flanking, by striking out of the fog, or through speed. Two attackers beat one reaction. Only specialists with reflex stats and reaction abilities defend well, so good defense becomes a role, not a default.
 
 ### Fog of war
 - Each side only sees what its robots perceive. What a robot perceives depends on its stats and capabilities, and probably on its facing. Some robots can see further (acuity).
@@ -133,6 +143,8 @@ Two opposing robots. Most actions take 2 tempos, a facing step takes 1, and a re
 
 From the side, A's parry would be harder; from the back, A could not react at all. If B had never come, A's side would have lost 3 actions of its pool.
 
+**Ganging up.** If a second enemy had attacked A from the side in tempo 6, A would already have used its one reaction on B, so the second attack would land unanswered.
+
 ## Where it could become ours
 
 Candidates only, not decided:
@@ -166,10 +178,14 @@ Candidates only, not decided:
 - [ ] Modifiers: facing arcs (which hex sides are front, side, back), waiting, terrain, cover, height
 - [ ] Timeline: what happens to an order unfinished at the end of the turn
 - [ ] Reactions: triggers, which reactions exist, how many per turn, how they are set in advance, where saved actions come from (held per robot, shared reserve, or a mix), guardrails for free defense (arc, time, cap), stances, and whether reactions can trigger reactions
-- [ ] Initiative: the rule, ties, and whether it is fixed or rolled
+- [ ] Initiative: settle the proposal (score, order within a tempo, reaction check, ties), and how a robot chooses which attack to answer
 - [ ] Targeting: aim at a robot or at a place (a place makes the empty-hallway miss possible)
 - [ ] Movement conflicts: two robots into one space, swaps, blocking
 - [ ] Fog: perception rules, what reveals a robot, what the replay shows
 - [ ] Skills: format, how stats scale them, limits such as cooldowns
 - [ ] Board: map sizes, facing arcs on the hex grid, terrain types and how they interact with facing
 - [ ] Damage, disabling and win conditions, including objective modes
+
+## Paper playtest (planned)
+
+A playable artifact that shows a turn playing out under the settled rules (owner, 2026-10-26). It lives in the repo, and its numbers come from the same rules it tests, so changing a rule changes the playtest. Built only once the model above is settled. Scope and plan are Open.

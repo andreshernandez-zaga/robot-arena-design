@@ -41,7 +41,10 @@
 - [ ] What counters stealth without making scanning mandatory?
 - [ ] What do robots without orders do? (Turn length starts at 16 tempos; see [Tuning Values](tuning-values.md).)
 - [ ] Tempo granularity: a finer unit, or initiative within a tempo for small stat differences?
-- [ ] Guardrails for free defensive reactions: weaker from the side and none from the back, a time cost on the robot's track, a cap per turn?
+- [ ] Initiative: settle the proposal in [Match Dynamics](match-dynamics.md#initiative-proposal-open).
+- [ ] Does the one-reaction cap cover all reactions, or only free defensive ones (with counters paid by saved actions)?
+- [ ] Should a reaction also cost 1 tempo on the robot's own track?
+- [ ] Paper playtest: scope, where it lives in the repo, and how it reads the rules.
 - [ ] Bonus actions: which abilities or bonuses grant 1 or 2 extra actions, and how to avoid snowballing?
 - [ ] Where reaction actions come from: held per robot, a shared squad reserve, or a mix? See [Match Dynamics](match-dynamics.md#readiness-and-reactions).
 - [ ] Detail design of actions, stats, modifiers, reactions, initiative, targeting, fog and skills: see the checklist in [Match Dynamics](match-dynamics.md#needs-detail-design).

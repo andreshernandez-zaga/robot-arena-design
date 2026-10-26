@@ -17,5 +17,7 @@
 | Defensive reaction cost | 0 actions (free) | Provisional | Starting point. Alternative: spend from the next turn's pool |
 | Offensive reaction cost | Saved actions | Provisional | Saved actions unused at the end of the turn are lost |
 | Facing arcs | Front 3 sides, side 2, back 1 | Open | Claude's candidate |
-| Free defensive reactions per robot per turn | No cap | Open | Candidate guardrail if defense proves too strong |
+| Reactions per robot per turn | 1 | Provisional | A robot attacked by two opponents can only answer one |
+| Default reaction success | Low (number Open) | Provisional | Better reactions come from stats and abilities |
+| Initiative ties | Both happen at once | Open | Part of the initiative proposal |
 | Squad size | 4–6 robots | Open | |

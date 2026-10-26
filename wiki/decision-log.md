@@ -59,3 +59,6 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-26 | Saved actions also allow offensive reactions (attack, counterattack), enabling ambushes and traps | Provisional |
 | 2026-10-26 | Reactions should give robots a sense of autonomy and intelligence | Provisional |
 | 2026-10-26 | Whether the pool counts actions or tempos; whether defense from facing is free | Open |
+| 2026-10-26 | The pool counts orders, not tempos. Robots act in tandem on their own tracks; tempos matter per robot. Resolves the Open row above | Provisional |
+| 2026-10-26 | Defensive reactions are free to start (no actions spent). Alternative kept: spend from the next turn's pool | Provisional |
+| 2026-10-26 | Turn length starts at 16 tempos. Starting values live in a Tuning Values page to tweak during game-testing | Provisional |

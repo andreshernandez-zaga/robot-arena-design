@@ -37,8 +37,9 @@
 - From these defaults we can build a scale to balance the game.
 - All robots advance tempo by tempo together. That is what makes the plans interleave, and what produces the shot into an empty hallway.
 - **Stats and classes change timing.** Examples only, since stats are not settled: high agility makes moving and turning a little faster, which wins against a robot doing the same thing with lower agility; high strength means more weight, which slows movement.
-- **Two currencies.** An order spends **actions** from the squad's pool and takes **tempos** of time. *(Replaces "one action = one beat".)* Open: whether the pool counts orders (actions) or time (tempos). Claude's lean: actions, so the pool is how much you do and tempos are how fast. If the pool counted tempos, a fast robot would get both more done and done earlier, which doubles the value of speed.
-- **Turn length (Open).** Measured in tempos, it caps how much one robot can do. Example: a 16-tempo turn fits about 8 standard actions for one robot, so spending the 15-action pool takes at least two robots.
+- **Two currencies.** An order spends **actions** from the squad's pool and takes **tempos** of time. The pool counts **orders, not tempos** (owner, 2026-10-26), so the pool is how much you do and tempos are how fast. *(Replaces "one action = one beat".)*
+- **Robots act in tandem.** Each robot has its own track of tempos, and all tracks run at the same time. One robot never waits for another to finish. Tempos matter per robot: they decide when each of its orders happens relative to everyone else's.
+- **Turn length: 16 tempos** to start (owner, 2026-10-26; tune in testing, see [Tuning Values](tuning-values.md)). It caps what one robot can do: about 8 standard actions, so spending the 15-action pool takes at least two robots.
 - **Granularity (Open).** With standard actions at 2 tempos, saving 1 tempo is a 50% speed-up, which is too coarse for "a tiny bit faster". Two ways out: a finer unit (for example, a standard action is 4 ticks), or let small stat differences decide the order *within* a tempo (initiative) and keep tempo cuts for real excellence. Claude's lean: the second.
 - **Cast time.** A slow skill can be seen coming, and a prepared robot can react before it lands. Being prepared lets a player play safe without predicting exactly, which can lower the planning load.
 - Open: what happens to an order unfinished at the end of the turn.
@@ -64,9 +65,11 @@ Every order spends actions from the pool and takes time in tempos. Both are deta
 - **Saved actions add offense.** If a robot keeps actions unspent (the owner's example: face right, keep the 3 remaining actions), it can also attack or counterattack when triggered. That sets up ambushes and traps.
 - If nothing triggers the robot, saved actions are **lost**. That is the price of waiting.
 - **Autonomy.** Reactions happen without the player, so robots seem to act on their own. The owner finds that attractive (see [Where it could become ours](#where-it-could-become-ours)).
-- **Open: is the defensive reaction free?** Two options:
-  - **Free:** facing alone lets a robot dodge or parry. Simple, and generous to defenders.
-  - **Passive edge only (Claude's lean):** facing makes a robot harder to hit from the front, and any active reaction, defensive or offensive, spends saved actions. This keeps defense from becoming the safe default.
+- **Defensive reactions are free** to start (owner, 2026-10-26). A robot dodges or parries what it faces without spending actions. That gives robots a sense of autonomy, and leaves the player to care about the strategic maneuvers. Alternative kept for later: a defensive reaction spends actions from the next turn's pool.
+- **Guardrails if free defense proves too strong** (candidates, Claude's suggestion):
+  - **Arc:** full chance from the front, worse from the side, none from the back. Flanking is the answer to a defender.
+  - **Time:** free in actions, not in time. The reaction takes 1 tempo on the robot's own track, which pushes its next order back (and can push its last order past the end of the turn).
+  - **Cap:** a limit on free defensive reactions per robot per turn, as a tuning value.
 - **Where saved actions come from (Open).** Three models:
   - **Held per robot.** Saved actions belong to one robot. Precise, but the player has to guess which robot will be attacked.
   - **Shared reserve.** The player leaves part of the pool unspent, and any waiting robot can draw on it. Less planning, but very flexible defense, which can push toward standoffs.
@@ -117,16 +120,16 @@ A new design area. Facing and waiting only matter when the board gives reasons t
 
 ## Worked example (illustrative only)
 
-Two opposing robots. Most actions take 2 tempos, a facing step takes 1, and a reaction takes 1. A saves actions; under Claude's lean, both its parry and its counter spend them.
+Two opposing robots. Most actions take 2 tempos, a facing step takes 1, and a reaction takes 1. A's parry is free; its counter spends a saved action.
 
 | Tempo | Robot A (the owner's example) | Robot B |
 |---|---|---|
 | 1–2 | Move forward | Move |
 | 3 | Face right, then wait with 3 saved actions | Move (tempos 3–4), ending in front of A |
 | 5 | Triggered: B starts an attack in A's front arc | Attack begins (2 tempos) |
-| 6 | Parry (1 tempo, 1 saved action). A faces B and is ready, so it wins the contest | Attack lands now, but is parried |
+| 6 | Parry (1 tempo, free). A faces B and is ready, so it wins the contest | Attack lands now, but is parried |
 | 7–8 | Counterattack (2 tempos, 1 saved action) | Caught mid-turn |
-| End | 1 saved action unused, so lost | |
+| End | 2 saved actions unused, so lost | |
 
 From the side, A's parry would be harder; from the back, A could not react at all. If B had never come, A's side would have lost 3 actions of its pool.
 
@@ -146,7 +149,7 @@ Candidates only, not decided:
 - **Concentration.** Pouring the pool into one robot is a real choice, but the turn length caps it. Watch whether one strong robot plus idle support becomes the only good play.
 - **Bonus actions can snowball.** If extra actions come from winning exchanges, the side that is ahead gets further ahead. Tie them to abilities with a cost.
 - **Wasted waits.** The owner accepts the cost, but if it happens too often a turn feels lost.
-- **Standoffs.** If waiting is the safe play, and 1-tempo reactions beat 2-tempo actions, nobody advances. Flanking, fog and the cost of reacting must keep attacking worthwhile ([risk 15](risks-and-critique.md#15-readiness-standoffs)).
+- **Standoffs.** If waiting is the safe play, and free 1-tempo defense beats 2-tempo attacks, nobody advances. Flanking, fog and the cost of reacting must keep attacking worthwhile ([risk 15](risks-and-critique.md#15-readiness-standoffs)).
 - **Too many modifiers.** If every stat shifts the timing of every action, the replay stops being readable. Keep a few modifiers, and show them.
 - **Readable resolution.** The replay has to show why things happened: who won initiative, what was parried, what each robot could see.
 - **Chance and inference.** Rolls in stat contests make outcomes harder to read and robots harder to infer ([risk 18](risks-and-critique.md#18-chance-in-stat-contests)).
@@ -156,14 +159,13 @@ Candidates only, not decided:
 
 - [ ] The list of actions, each with its action cost and its time in tempos, including cast times
 - [ ] The tempo scale: unit size, default times, and how stats and classes shift them
-- [ ] What the pool counts: actions or tempos
-- [ ] Turn length (tempos), bonus actions, and default behavior for robots without orders
+- [ ] Bonus actions, and default behavior for robots without orders (turn length starts at 16 tempos; see [Tuning Values](tuning-values.md))
 - [ ] Stats: which, how many, and how they enter each contest
 - [ ] Capabilities: which ones exist (acuity and others), and where they come from (parts, classes)
 - [ ] Resolution style: how much chance, of what shape, and which checks are passive (see [Stats & Resolution](explorations/stats-and-resolution.md))
 - [ ] Modifiers: facing arcs (which hex sides are front, side, back), waiting, terrain, cover, height
 - [ ] Timeline: what happens to an order unfinished at the end of the turn
-- [ ] Reactions: triggers, which reactions exist, how many per turn, how they are set in advance, where saved actions come from (held per robot, shared reserve, or a mix), whether defense from facing is free, stances, and whether reactions can trigger reactions
+- [ ] Reactions: triggers, which reactions exist, how many per turn, how they are set in advance, where saved actions come from (held per robot, shared reserve, or a mix), guardrails for free defense (arc, time, cap), stances, and whether reactions can trigger reactions
 - [ ] Initiative: the rule, ties, and whether it is fixed or rolled
 - [ ] Targeting: aim at a robot or at a place (a place makes the empty-hallway miss possible)
 - [ ] Movement conflicts: two robots into one space, swaps, blocking

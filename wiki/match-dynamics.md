@@ -21,15 +21,17 @@
 ## Core concepts
 
 ### Action budget: one pool for the squad
-- The squad shares **one pool of actions per turn** (e.g. 10). The player decides how to spread it: most of it on one robot, or a little on each. *(Changed 2026-10-26: replaces the per-robot budget.)*
+- The squad shares **one pool of 15 actions per turn** (the owner's baseline, 2026-10-26). The player decides how to spread it: most of it on one robot, or a little on each. *(Replaces the per-robot budget.)*
+- **Bonus actions (Open):** abilities or bonuses might add 1 or 2 actions in a turn. The mechanics are not defined yet.
 - Robots can be left without orders, which keeps planning light on a phone.
 - Actions do not carry over to the next turn.
-- Open: the pool size, and what a robot with no orders does. Candidate: it holds its position and facing, and can still react if the squad holds a reserve.
+- Open: what a robot with no orders does. Candidate: it holds its position and facing, and can still react if the squad holds a reserve.
 
 ### The timeline
 - The turn is a shared timeline of **beats**, and **one action is one beat**. An order that costs 2 actions takes 2 beats to perform. *(Accepted 2026-10-26.)*
 - All robots advance beat by beat together. That is what makes the plans interleave, and what produces the shot into an empty hallway.
 - Two numbers define a turn: the **pool** (how much the squad can do) and the **turn length** in beats (how long the turn lasts). A robot does at most one action per beat, so the turn length caps how much of the pool one robot can use. That keeps "one robot does everything" in check.
+- Open: the turn length. With a 15-action pool, a turn of about 6 to 8 beats lets one robot use at most about half the pool, so spending all of it takes at least two robots. A 15-beat turn removes the cap. (Numbers illustrative.)
 - **Cast time.** A skill that costs several actions takes several beats, so a prepared robot (waiting, facing the right way) can react before it lands. Being prepared lets a player play safe without predicting exactly, which can lower the planning load.
 - Open: whether stats change what actions cost (a fast robot moves for fewer actions), and what happens to an order unfinished at the end of the turn.
 
@@ -43,7 +45,7 @@ Kinds of order, not a final list:
 Every order costs actions. The costs are detail design.
 
 ### Facing
-- Every robot faces a direction, and changing it costs actions.
+- Every robot faces one of the six sides of its hex, and changing it costs actions.
 - Facing a threat improves the robot's **initiative** against it: a better chance to act first, or to react well. Attacks from outside its facing are harder to answer. This is what makes flanking and positioning matter.
 - Facing only means something if the board gives reasons to watch a direction (see [Board and terrain](#board-and-terrain)).
 - Open: whether facing also decides what the robot can see (a vision arc), and whether it changes defense directly, as front, side and back blocking does in Tactics Arena Online.
@@ -53,7 +55,10 @@ Every order costs actions. The costs are detail design.
 - While waiting, if something triggers the robot (for example an enemy appears or attacks it), it can spend held actions on a **reaction**: parry or evade, counter, or a reaction skill.
 - Waiting improves the chance of parrying an attack or acting first.
 - If nothing triggers the robot, the held actions are **lost**. That is the price: waiting can waste part of the pool.
-- Open (candidate): actions the squad leaves unspent form a **shared reserve**, and any waiting robot can draw on it when triggered. That is simpler to plan than assigning a reserve robot by robot.
+- **Where reaction actions come from (Open).** Three models:
+  - **Held per robot.** A Wait order sets aside a number of actions for that one robot. Precise, but the player has to guess which robot will be attacked, and it adds planning.
+  - **Shared reserve.** The player simply leaves part of the pool unspent. Any waiting robot can draw on it when triggered. Less planning, but more flexible defense, which can push toward standoffs.
+  - **Mix (Claude's lean).** A shared reserve, but only robots that are waiting and facing the trigger can draw on it, with a cap per reaction. Reacting could also cost slightly more than the same action planned, to keep acting first attractive.
 
 ### Initiative
 - When two robots act on the same beat, or an attack meets a waiting robot, an **initiative contest** decides what happens first.
@@ -93,7 +98,7 @@ A new design area. Facing and waiting only matter when the board gives reasons t
 - **Ledges and windows:** height and openings that let a robot see or attack in one direction while staying protected.
 - **Other interactions** still to find, such as doors, destructible cover and hazards.
 
-Open: a grid or free movement. Facing and terrain push toward a grid (squares or hexes), which also fixes how many directions a robot can face. Decide this early, because ranges, vision and movement all depend on it. This section may become its own page.
+**Hex grid** (decided 2026-10-26, Provisional): no free movement. A robot faces one of the six hex sides, which gives natural front, flank and rear arcs. Open: board sizes, and which sides count as front, flank and rear. This section may become its own page.
 
 ## Worked example (illustrative only)
 
@@ -120,6 +125,7 @@ Candidates only, not decided:
 
 - **Planning load.** A squad pool only lightens planning if leaving robots idle is a real option, and idle robots need a sensible default ([risk 17](risks-and-critique.md#17-planning-load)).
 - **Concentration.** Pouring the pool into one robot is a real choice, but the turn length caps it. Watch whether one strong robot plus idle support becomes the only good play.
+- **Bonus actions can snowball.** If extra actions come from winning exchanges, the side that is ahead gets further ahead. Tie them to abilities with a cost.
 - **Wasted waits.** The owner accepts the cost, but if it happens too often a turn feels lost.
 - **Standoffs.** If waiting is the safe play, and cast times make reacting easy, nobody advances ([risk 15](risks-and-critique.md#15-readiness-standoffs)).
 - **Readable resolution.** The replay has to show why things happened: who won initiative, what was parried, what each robot could see.
@@ -129,18 +135,18 @@ Candidates only, not decided:
 ## Needs detail design
 
 - [ ] The list of actions and what each costs, including cast times
-- [ ] Pool size and turn length (beats); default behavior for robots without orders
+- [ ] Turn length (beats), bonus actions, and default behavior for robots without orders
 - [ ] Stats: which, how many, and how they enter each contest
 - [ ] Capabilities: which ones exist (acuity and others), and where they come from (parts, classes)
 - [ ] Resolution style: how much chance, of what shape, and which checks are passive (see [Stats & Resolution](explorations/stats-and-resolution.md))
 - [ ] Modifiers: facing (front, side, back), waiting, terrain, cover, height
 - [ ] Whether stats change action costs
 - [ ] Timeline: what happens to an order unfinished at the end of the turn
-- [ ] Reactions: triggers, which reactions exist, how many per turn, how they are set in advance, and whether the squad has a shared reserve
+- [ ] Reactions: triggers, which reactions exist, how many per turn, how they are set in advance, and where reaction actions come from (held per robot, shared reserve, or a mix)
 - [ ] Initiative: the rule, ties, and whether it is fixed or rolled
 - [ ] Targeting: aim at a robot or at a place (a place makes the empty-hallway miss possible)
 - [ ] Movement conflicts: two robots into one space, swaps, blocking
 - [ ] Fog: perception rules, what reveals a robot, what the replay shows
 - [ ] Skills: format, how stats scale them, limits such as cooldowns
-- [ ] Board: grid or not, square or hex, terrain types and how they interact with facing
+- [ ] Board: map sizes, facing arcs on the hex grid, terrain types and how they interact with facing
 - [ ] Damage, disabling and win conditions, including objective modes

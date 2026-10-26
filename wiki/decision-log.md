@@ -50,3 +50,5 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-26 | Board design is a design area: terrain that interacts with facing (barriers, chokepoints, ledges, windows) | Provisional |
 | 2026-10-26 | Stats improve only through crossing for now. Other learning mechanisms are backlog | Provisional |
 | 2026-10-26 | Added a Stats & Resolution exploration page (D&D benchmark) | Provisional |
+| 2026-10-26 | Hex grid for the board; no free movement | Provisional |
+| 2026-10-26 | Squad pool baseline: 15 actions per player per turn. Abilities or bonuses might add 1 or 2 actions; mechanics Open | Provisional |

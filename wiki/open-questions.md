@@ -35,12 +35,13 @@
 - [ ] Do robots show visible damage (dents, lost parts) as information?
 - [ ] What form does the post-match study take: replay, log, summary, or a per-robot scouting report?
 - [ ] How do async matches avoid stalling?
-- [ ] Board: grid or free movement (facing and terrain push toward a grid), square or hex, and which terrain types.
+- [ ] Board: map sizes, facing arcs on the hex grid, and which terrain types.
 - [ ] How do we stop readiness standoffs in async play?
 - [ ] What does the replay show: each player's fogged view, or the whole arena? Does that differ during and after the match?
 - [ ] What counters stealth without making scanning mandatory?
-- [ ] Squad pool: how big, how long a turn is (beats), and what robots without orders do.
-- [ ] Reactions with a squad pool: does the unspent pool form a shared reserve that any waiting robot can use?
+- [ ] Turn length in beats (how much of the 15-action pool one robot can use), and what robots without orders do.
+- [ ] Bonus actions: which abilities or bonuses grant 1 or 2 extra actions, and how to avoid snowballing?
+- [ ] Where reaction actions come from: held per robot, a shared squad reserve, or a mix? See [Match Dynamics](match-dynamics.md#readiness-and-reactions).
 - [ ] Detail design of actions, stats, modifiers, reactions, initiative, targeting, fog and skills: see the checklist in [Match Dynamics](match-dynamics.md#needs-detail-design).
 - [ ] Does facing also decide what a robot sees, or change its defense directly?
 - [ ] Resolution: how much chance, of what shape, and which checks are passive? See [Stats & Resolution](explorations/stats-and-resolution.md).

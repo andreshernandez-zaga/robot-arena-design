@@ -5,7 +5,7 @@
 ## Shape of a match
 
 - Player vs. player.
-- Squads placed on a board or terrain, chess-like but not necessarily a grid.
+- Squads placed on a hex-grid board with terrain (see [Match Dynamics](match-dynamics.md#board-and-terrain)).
 - Squad size: around 4–6 robots (Open). A 1v1 single-robot format was considered because crossing matters more than squad size.
 - The squad shares one pool of actions per turn, and the player chooses how to spread it across robots. See [Match Dynamics](match-dynamics.md).
 - Win condition: last squad standing.

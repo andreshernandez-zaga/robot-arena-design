@@ -66,3 +66,13 @@ The network proxy blocked Wikipedia, MobyGames, Internet Archive, Applefritter a
 - Contamination: one summary described "10 action steps per turn", one step per square, and scan along N/S/E/W lines. That matches the floybix "mini RoboSport" remake (and a separate "RoboSport REMAKE" manual), not the original. Left out of the wiki.
 - My earlier guess at robot names (Scout, Sniper, Gunner, Bazooka) is unconfirmed. Not used.
 - Distilled in `wiki/explorations/turn-based-mechanics.md`.
+
+## RoboSport, second pass (2026-10-26)
+
+- Network: the sandbox now fails DNS or policy for Wikipedia, reference.org, tcrf, goodolddays, Macintosh Repository, Amiga Reviews, textfiles mirror, atarimagazines, maxis.fandom.com, github.com. Search still works.
+- Tried to attach the public repo techdan/RoboArena (fan rebuild; docs/spec.md = rules and numbers, docs/priority-tests.md = research log). The attach was denied by the permission classifier, so it was not retried or worked around. Its rules came only from search snippets of its pull requests.
+- New from the Compute! review (via summary): eight weapon systems (rifle, burst, auto, grenade, missile, zap, time bomb, kamikaze), five robot types differing in armor and loadout, home areas, win by goal or by incapacitating all enemies, five game types incl. baseball (four corner bases).
+- New from the fan project (snippets, unverified by us): tick-based timing (turning 5 ticks per eighth of a turn, bullets land 5 ticks later, Zap once per 60 ticks and 60-123 damage), per-tick spotting roll, firing reveals the shooter, low walls and fences stop grenades and missiles, self-destruct for a last robot (20-tick order), Beginner (all enemies visible, missiles only) and Standard (fog, Zap) setups, unfinished orders dropped (inferred).
+- Unattributed: "a stealth robot cannot be seen unless moving or scanned from an adjacent square".
+- Still missing: robot names and stats, full command list, wall and door rules, tick length.
+- Fan remakes to keep apart from the original: floybix "mini RoboSport" (10 action steps, 4 health, scan along N/S/E/W) and the "RoboSport REMAKE" manual.

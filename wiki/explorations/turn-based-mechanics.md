@@ -84,21 +84,34 @@ Evidence labels are explained in the [section README](README.md#evidence-labels)
 - **Watch out:** X-COM plays live, so the player is present at every interrupt. In async play reactions have to be standing orders resolved by the engine. Overwatch-style systems tend toward standoffs. As I remember it, the initiative formula felt opaque to many players.
 
 ### RoboSport (Maxis, 1991): robot squads, queued timed orders, simultaneous replay
-*Search summaries only. Wikipedia, Giant Bomb, MobyGames and the Compute! review were unreachable, so treat the details as unverified. Sources, not read in full: [Wikipedia](https://en.wikipedia.org/wiki/RoboSport), [Compute! review](https://www.atarimagazines.com/compute/issue149/122_RoboSport_for_Window.php), [Giant Bomb](https://www.giantbomb.com/robosport/3030-19320/). Lead as the owner's first remembered game; not confirmed.*
-- **What it is:** a turn-based tactics game by Edward Kilham, published by Maxis for Mac and Windows 3.0 in 1991, converted to the Amiga in 1992. Up to four teams of up to eight robots each, human or computer. Computer robots have four AI levels, from "stupid" to "ferocious".
-- **How a turn works:** every player programs every robot, then all programs play out simultaneously. Each robot has a time budget (15 seconds by default), and each order uses part of it. Commands include moving, raising or lowering the head (which changes the field of view), firing at a spot, and scanning and firing if an enemy is seen.
-- **Replay and network:** after orders are in, the game plays the result as a "movie". It is reported as one of the first games with replays of finished matches, and one of the first with network play (AppleTalk on Mac, NetBIOS on PC, TCP/IP on Amiga).
-- **Robots:** each kind carries a different weapon: rifle, automatic gun, burst gun, missile launcher. One summary says four kinds, another five. Names and stats are unconfirmed.
-- **Maps and modes:** 24 maps (eight sizes across three tilesets: suburbs, rubble, computer). Modes are survival, capture the flag, hostage, treasure hunt and baseball (touch all four bases).
-- **Reception:** mixed. Dragon gave it 5 of 5. One summary gives Computer Gaming World 2 of 5; another says it praised the Windows version. Unresolved.
-- **Not confirmed:** the exact command list and time costs, how facing and scanning work, whether the maps have walls and doors (the "suburbs" set suggests buildings), and the damage and cover rules.
+*Search summaries only. Wikipedia, Giant Bomb, MobyGames, the Compute! review and the fan project's docs were unreachable. Sources, not read in full: [Wikipedia](https://en.wikipedia.org/wiki/RoboSport), [Compute! review](https://www.atarimagazines.com/compute/issue149/122_RoboSport_for_Window.php), [Giant Bomb](https://www.giantbomb.com/robosport/3030-19320/), [RoboArena, a fan rebuild](https://github.com/techdan/RoboArena). Lead as the owner's first remembered game; not confirmed.*
+
+Evidence tags: **[multi]** several summaries agree. **[Compute!]** the 1993 review as quoted in a summary. **[fan]** claims by the RoboArena project, which says it checked them against the original program; secondary and not verified by us. **[?]** a single or unattributed source.
+
+- **What it is [multi]:** a turn-based tactics game by Edward Kilham, published by Maxis for Mac and Windows 3.0 in 1991, converted to the Amiga in 1992. Up to four teams of up to eight robots, human or computer.
+- **Turn flow:** teams start in a home area. Every player programs every robot, then all programs run at once and the result plays back as a "movie" [multi]. You win by completing the game's goal or incapacitating every enemy robot [Compute!].
+- **Time model:** each robot has a time budget, 15 seconds by default, and each order uses part of it [multi]. The simulation runs in fine "ticks" [fan]. Turning costs 5 ticks per eighth of a turn. A bullet lands 5 ticks after it is fired, on the robot it was aimed at. A Zap fires at most once per 60 ticks and lands 5 ticks later. An order unfinished at the end of the turn is dropped (inferred).
+- **Commands [multi]:** move, raise or lower the head (which changes the field of view), fire at a spot, scan and fire if an enemy is seen. The full list is unconfirmed.
+- **Vision:** enemy robots stay hidden unless a friendly robot sees or scans them [review summary]. Spotting is a roll on every tick, and firing reveals the shooter [fan]. One summary says a "stealth" robot cannot be seen unless it moves or is scanned from an adjacent square [?].
+- **Weapons [Compute!]:** eight systems, increasingly destructive and longer-ranged: rifle, burst, auto, grenade, missile, zap, time bomb, kamikaze. Grenades and missiles can be stopped by a low wall or fence in the way. Zap deals 60-123 damage. The time bomb's blast has radius 4 and hits every side. A team's last robot can self-destruct (a 20-tick order that explodes 10 ticks in) [fan].
+- **Robots [Compute!]:** five types, differing in armor and weapon loadout. Names and stats unconfirmed. Another source lists four kinds armed with rifle, automatic, burst or missile.
+- **Setups [fan]:** the original "Beginner" setup shows every enemy and has missiles only. "Standard" keeps the fog and adds Zap.
+- **Maps and modes [multi]:** 24 maps (eight sizes across three tilesets: suburbs, rubble, computer). Modes are survival, capture the flag, hostage rescue, treasure hunt, and baseball (reach the four corner bases).
+- **Computer players [multi]:** four levels from "stupid" to "ferocious", and styles that are defensive, aggressive or crafty. Crafty teams were good at ambushes, and a Mac reviewer lost nearly every custom scenario.
+- **Replay and network:** one of the first games with replays of finished matches and with network play (AppleTalk, NetBIOS, TCP/IP) [multi].
+- **Reception:** mixed. Dragon gave it 5 of 5. One summary gives Computer Gaming World 2 of 5; another says it praised the Windows version.
+- **Not confirmed:** robot names and stats, the full command list, damage per weapon, how walls and doors block sight, and how long a tick is.
 - **Why it matters:** it appears to touch all five axes above: blind queued orders (A), interleaved simultaneous resolution (B), a per-robot time budget with continuous costs (C), scan-and-fire as a standing reaction (D), and head direction changing the field of view (E). It also matches the owner's first remembered game on mechanics. The "suburbs" maps fit the building memory, but robots instead of thieves remain a mismatch.
 - **What we might take:**
   - **A per-robot time budget with continuous costs.** A worked example of axis C.
+  - **Delayed effects.** If a shot lands ticks after it is fired, prediction is the skill: you lead the target, and a wrong guess hits an empty spot. That is the "empty hallway" moment as a rule.
+  - **Information cost of attacking.** Firing reveals the shooter, which gives stealth a price.
+  - **Turning costs time,** so facing is an investment, not a free setting.
   - **Scan-and-fire as a stance:** a standing reaction set in advance (axis D), which suits async play.
+  - **A setup ramp.** Beginner shows everything, Standard adds fog and more weapons, a ready-made onboarding path.
   - **Objective modes** (flag, hostage, treasure) as pressure to engage, against standoffs and stalls (risks 9 and 15).
   - **Replay as a core feature,** and **computer opponents with difficulty levels** for practice.
-- **Watch out:** direct prior art for robot-squad tactics with simultaneous replay. The turn mechanics will not set us apart; crossing has to. Two remakes exist ("mini RoboSport" and a "RoboSport REMAKE" manual), and one search summary mixed their rules (10 action steps, one step per square, scanning along a straight line) into the original. I left those out.
+- **Watch out:** direct prior art for robot-squad tactics with simultaneous replay. The turn mechanics will not set us apart; crossing has to. The tick rules come from a fan project that I could not read directly. Two other remakes exist ("mini RoboSport" and a "RoboSport REMAKE" manual), and one search summary mixed their rules (10 action steps, one step per square, scanning along a straight line) into the original. I left those out.
 
 ### Laser Squad Nemesis (2002): blind simultaneous orders with standing stances
 *Search summary; not verified further. The year is later than the owner's "late 90s".*

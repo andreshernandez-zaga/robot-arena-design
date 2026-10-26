@@ -52,3 +52,10 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-26 | Added a Stats & Resolution exploration page (D&D benchmark) | Provisional |
 | 2026-10-26 | Hex grid for the board; no free movement | Provisional |
 | 2026-10-26 | Squad pool baseline: 15 actions per player per turn. Abilities or bonuses might add 1 or 2 actions; mechanics Open | Provisional |
+| 2026-10-26 | Orders take time in tempos: most actions 2, simple ones (a facing step) 1, skills start at 2; being extraordinarily good can bring an action to 1 (or 1.5). Replaces "one action = one beat" | Provisional |
+| 2026-10-26 | Stats and classes change how long actions take (examples: agility speeds moving and turning; strength adds weight and slows movement). Stats not settled | Provisional |
+| 2026-10-26 | Front, side and back approaches differ for reactions | Provisional |
+| 2026-10-26 | Facing lets a robot react defensively (dodge, parry); reactions take 1 tempo by default | Provisional |
+| 2026-10-26 | Saved actions also allow offensive reactions (attack, counterattack), enabling ambushes and traps | Provisional |
+| 2026-10-26 | Reactions should give robots a sense of autonomy and intelligence | Provisional |
+| 2026-10-26 | Whether the pool counts actions or tempos; whether defense from facing is free | Open |

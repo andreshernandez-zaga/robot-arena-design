@@ -39,7 +39,10 @@
 - [ ] How do we stop readiness standoffs in async play?
 - [ ] What does the replay show: each player's fogged view, or the whole arena? Does that differ during and after the match?
 - [ ] What counters stealth without making scanning mandatory?
-- [ ] Turn length in beats (how much of the 15-action pool one robot can use), and what robots without orders do.
+- [ ] Turn length in tempos (how much one robot can do in a turn), and what robots without orders do.
+- [ ] Does the pool count actions (orders) or tempos (time)?
+- [ ] Tempo granularity: a finer unit, or initiative within a tempo for small stat differences?
+- [ ] Is a defensive reaction from facing free, or does it spend saved actions?
 - [ ] Bonus actions: which abilities or bonuses grant 1 or 2 extra actions, and how to avoid snowballing?
 - [ ] Where reaction actions come from: held per robot, a shared squad reserve, or a mix? See [Match Dynamics](match-dynamics.md#readiness-and-reactions).
 - [ ] Detail design of actions, stats, modifiers, reactions, initiative, targeting, fog and skills: see the checklist in [Match Dynamics](match-dynamics.md#needs-detail-design).

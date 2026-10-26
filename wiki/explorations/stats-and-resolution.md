@@ -47,7 +47,7 @@ Evidence labels are explained in the [section README](README.md#evidence-labels)
 - **Watch out:**
   - The d20 itself is swingy. If outcomes must read as fair, use a narrower or bell-shaped roll, or fixed values for most checks.
   - Visible breakdowns let players work out stats, which can leak an enemy's blueprint (risk 11). Show the full breakdown for your own robots and less for enemies.
-  - D&D resolves one action at a time with a human referee. We resolve whole turns automatically, so contests that depend on timing (who acts first in a beat, reacting to a cast) need rules D&D does not have.
+  - D&D resolves one action at a time with a human referee. We resolve whole turns automatically, so contests that depend on timing (who acts first in a tempo, reacting to a cast) need rules D&D does not have.
 
 ## How it could land
 

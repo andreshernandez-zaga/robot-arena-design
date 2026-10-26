@@ -60,7 +60,7 @@ Lots of numbers delight a minority of players and overwhelm the rest. Detail mus
 
 ## 15. Readiness standoffs
 
-If holding budget back for reactions is the safest play, nobody advances. With async play and "last squad standing" (see #9), a standoff can last days. Something has to reward or force engagement: objectives, a shrinking arena, a turn limit. Only matters if readiness is adopted (see [Turn-Based Mechanics](explorations/turn-based-mechanics.md)).
+If holding budget back for reactions is the safest play, nobody advances. With async play and "last squad standing" (see #9), a standoff can last days. Something has to reward or force engagement: objectives, a shrinking arena, a turn limit. Readiness is now adopted (see [Match Dynamics](match-dynamics.md#readiness-and-reactions)), and reactions that take 1 tempo against 2-tempo actions make defense strong. Flanking, fog and the cost of reacting have to keep attacking worthwhile.
 
 ## 16. Fog vs. the match as information
 

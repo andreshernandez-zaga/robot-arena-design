@@ -7,7 +7,7 @@
 - Player vs. player.
 - Squads placed on a board or terrain, chess-like but not necessarily a grid.
 - Squad size: around 4–6 robots (Open). A 1v1 single-robot format was considered because crossing matters more than squad size.
-- Each turn grants a pool of actions (e.g. 10). Abilities cost different amounts (e.g. 3). You spend the pool across your whole squad. *(Squad pool vs. a budget per robot is Open. See [Turn-Based Mechanics](explorations/turn-based-mechanics.md).)*
+- Each robot gets a budget of actions per turn and spends it on orders. See [Match Dynamics](match-dynamics.md). *(Replaces the earlier squad-wide pool; per robot is to confirm.)*
 - Win condition: last squad standing.
 
 ## Why keep squads (leaning)
@@ -25,7 +25,7 @@
 
 - **Simultaneous (leaning):** both players submit, the game resolves the turn, and both watch the replay. The owner described turns this way ("once both players submit their turn, the game shows the replay"). It fits the "submit and see what happens" feeling.
 - **Alternating** (I move, then you move) is still possible if simultaneous resolution causes problems, e.g. confusing outcomes or hard-to-predict collisions.
-- The wider design space (how orders are given, whether steps interleave, holding budget back for reactions) is in [Turn-Based Mechanics](explorations/turn-based-mechanics.md).
+- How a turn plays out (budgets, facing, waiting, initiative, fog) is defined in [Match Dynamics](match-dynamics.md). The wider design space is in [Turn-Based Mechanics](explorations/turn-based-mechanics.md).
 
 ## Fog on the board (Provisional, details Open)
 

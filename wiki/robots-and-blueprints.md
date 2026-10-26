@@ -33,7 +33,7 @@ Crossing would work on the genes and the part tree, **never directly on the stat
   - *Risk:* if there are too many, inference becomes a lottery. Keep them small and bounded, if used at all.
 - **D. A budget that can't be exceeded.** Weight, power or a similar budget every blueprint must fit, which crossing must respect. Sidegrades become the default outcome rather than upgrades. *Claude considers this close to mandatory, whatever the representation; not yet agreed.*
 - **E. A decision tree for control logic.** Simple rules for rudimentary, non-AI robots ("if an ally is attacked, intercept"). This is the most literal fit for genetic programming and for the narrative.
-  - *Tension:* the player controls robots with action points, so this logic could only drive reactions or passive behavior. It might suit simultaneous turns. **Parked.**
+  - *Tension:* the player controls robots with action points, so this logic could only drive reactions or passive behavior. It might suit simultaneous turns. **Parked.** *Revisited 2026-10-26: reactions during a turn are a natural place for it. See [Match Dynamics](match-dynamics.md#where-it-could-become-ours).*
 - **Other options not yet explored:** a flat attribute array with a dedicated crossing rule (the owner's alternative), or something else entirely. The owner explicitly invited creative alternatives, so this list is not closed.
 
 #### Many genes, few expressed stats (Provisional direction)

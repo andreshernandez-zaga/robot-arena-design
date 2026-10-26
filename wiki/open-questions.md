@@ -30,23 +30,19 @@
 
 ## Squad & match
 - [ ] Squad size: single robot or a small squad (4–6)?
-- [ ] Simultaneous turns are the leaning. Any reason to go back to alternating?
 - [ ] Which information sits at which visibility level (exact, range, qualitative, hidden)?
 - [ ] Is scanning an ability? Whose, and at what cost?
 - [ ] Do robots show visible damage (dents, lost parts) as information?
 - [ ] What form does the post-match study take: replay, log, summary, or a per-robot scouting report?
 - [ ] How do async matches avoid stalling?
 - [ ] Board/terrain shape.
-- [ ] Budget scope: per robot, squad pool, or both? Continuous time costs or fixed action slots?
-- [ ] Do steps interleave (step 1 for both sides, then step 2) or does each side's whole list run in turn?
-- [ ] How are orders given: short queued lists, standing orders, or both? How long are the lists?
-- [ ] Readiness: can unspent budget be held back for reactions? How is it set in advance, given the player is not there?
-- [ ] Initiative: how are simultaneous conflicts decided (stat contest, fixed order)? How legible is it?
 - [ ] How do we stop readiness standoffs in async play?
-- [ ] Fog: what drives visibility (line of sight, facing, range)?
 - [ ] What does the replay show: each player's fogged view, or the whole arena? Does that differ during and after the match?
 - [ ] What counters stealth without making scanning mandatory?
-- [ ] Does facing matter defensively (front, side and back protection), not only for vision?
+- [ ] Confirm the action budget is per robot (implied 2026-10-26).
+- [ ] Confirm the shared timeline: one action = one beat.
+- [ ] Detail design of actions, stats, modifiers, reactions, initiative, targeting, fog and skills: see the checklist in [Match Dynamics](match-dynamics.md#needs-detail-design).
+- [ ] Does facing also decide what a robot sees, or change its defense directly?
 - [ ] Is there a non-kill win condition (e.g. disabling all mobile robots) to shorten async matches?
 - [ ] Are there match objectives beyond last squad standing (flag, hostage, treasure) to keep async matches moving?
 - [ ] Which game was the owner's first remembered Apple game? (RoboSport, Galactic Gladiators, other.) Low priority.
@@ -55,6 +51,7 @@
 - [ ] Fixed classes vs. emergent roles beyond the starter archetypes?
 
 ## Progression
+- [ ] How does a robot "improve its stats": only through crossing, or also through play?
 - [ ] Number of memory slots. Is there any archive?
 - [ ] How much can self-play do before it undermines PvP?
 - [ ] Robot aging/degradation (parked for now).

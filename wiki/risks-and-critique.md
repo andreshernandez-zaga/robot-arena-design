@@ -69,3 +69,7 @@ Fog and stealth reduce what a replay shows about enemy robots, and the capture d
 ## 17. Planning load with per-robot budgets
 
 A budget, orders and a stance for each of 4–6 robots, planned blind on a phone, can break the relaxed-play pillar (see #14). Keep lists short, or give robots sensible defaults.
+
+## 18. Chance in stat contests
+
+If initiative, hits and parries are decided by rolls, replays get harder to explain and robots harder to infer from a match (see #3 and #11). Some chance adds drama; too much turns blind planning into a lottery. Decide how much chance there is, and show it in the replay.

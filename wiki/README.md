@@ -18,6 +18,7 @@ You choose what to cross based on how a robot looks and how it fought. What you 
 | [Robots & Blueprints](robots-and-blueprints.md) | Blueprints, genotype/phenotype, visual form, roles |
 | [Crossing & Evolution](crossing-and-evolution.md) | How designs are acquired, crossed, and evolved |
 | [Matches & Pacing](matches-and-pacing.md) | The arena, turns, async play, match readability |
+| [Match Dynamics](match-dynamics.md) | How a turn plays out: action budgets, facing, waiting to react, initiative, fog, stats and skills |
 | [Progression & Memory](progression-and-memory.md) | Slots, rewards for winners and losers, self-play |
 | [Explorations & Benchmarks](explorations/README.md) | Our explorations of the design space and the existing games we measure them against, by topic. Not decisions: [crossing & information](explorations/crossing-and-information.md), [turn-based mechanics](explorations/turn-based-mechanics.md) |
 | [Risks & Critique](risks-and-critique.md) | Known risks and honest concerns |

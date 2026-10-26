@@ -33,3 +33,12 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-04 | Resolution order: steps interleave between sides vs. each side's list runs in turn | Open |
 | 2026-10-04 | Added a Turn Mechanics page separating orders, resolution, budget, readiness and information. Added X-COM, RoboSport and Laser Squad Nemesis to Inspirations | Provisional |
 | 2026-10-04 | The Inspirations page became an Explorations & Benchmarks section organized by topic (crossing & information, turn-based mechanics). The Turn Mechanics page moved into it. Explorations and benchmarks are not decisions | Provisional |
+| 2026-10-26 | Match dynamics take RoboSport's overall turn loop as the benchmark. Our own actions, stats and modifiers will be designed | Provisional |
+| 2026-10-26 | Each robot gets a budget of actions per turn (actions, not seconds). Per robot is implied by the owner's example, to confirm. Supersedes the 2026-10-04 Open row on per-robot budgets | Provisional |
+| 2026-10-26 | Every player, human or AI, submits orders blind and the whole turn plays back, under fog of war (reaffirms earlier rows) | Provisional |
+| 2026-10-26 | Facing costs actions and improves initiative and reactions against what the robot faces | Provisional |
+| 2026-10-26 | Robots can hold actions with a Wait order to react; held actions that are not used are lost. Supersedes the 2026-10-04 Open row on readiness | Provisional |
+| 2026-10-26 | Stats act during the play-out (initiative, hits, parries, perception, skill strength) | Provisional |
+| 2026-10-26 | Skills cost actions. Whether a skill's spec scales with the robot's stats is Open | Provisional |
+| 2026-10-26 | A shared timeline where one action is one beat, so cost equals duration (Claude's suggestion) | Open |
+| 2026-10-26 | Added a Match Dynamics design page | Provisional |

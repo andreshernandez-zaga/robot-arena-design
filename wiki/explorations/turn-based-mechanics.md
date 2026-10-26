@@ -4,6 +4,8 @@
 
 ## Where we are
 
+> The owner's decisions from this exploration now live in [Match Dynamics](../match-dynamics.md) (2026-10-26). The "Where we are" column below reflects 2026-10-04.
+
 [Matches & Pacing](../matches-and-pacing.md) says turns are simultaneous (Provisional) and that a pool of actions is spent across the squad (illustrative). Those two lines hide several separate choices. This page pulls them apart so each can be decided on its own, then measures them against existing games.
 
 It started from the owner's memories of two old games. What felt good in them was not "turn-based" in general. It was a few specific things:

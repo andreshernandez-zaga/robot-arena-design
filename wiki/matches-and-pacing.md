@@ -7,7 +7,7 @@
 - Player vs. player.
 - Squads placed on a board or terrain, chess-like but not necessarily a grid.
 - Squad size: around 4–6 robots (Open). A 1v1 single-robot format was considered because crossing matters more than squad size.
-- Each robot gets a budget of actions per turn and spends it on orders. See [Match Dynamics](match-dynamics.md). *(Replaces the earlier squad-wide pool; per robot is to confirm.)*
+- The squad shares one pool of actions per turn, and the player chooses how to spread it across robots. See [Match Dynamics](match-dynamics.md).
 - Win condition: last squad standing.
 
 ## Why keep squads (leaning)

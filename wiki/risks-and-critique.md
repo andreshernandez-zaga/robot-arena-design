@@ -66,10 +66,10 @@ If holding budget back for reactions is the safest play, nobody advances. With a
 
 Fog and stealth reduce what a replay shows about enemy robots, and the capture decision depends on that (see #3 and #11). Either stealthy designs get under-selected for crossing, or the replay shows more than the players saw while planning. The replay's perspective has to be decided deliberately.
 
-## 17. Planning load with per-robot budgets
+## 17. Planning load
 
-A budget, orders and a stance for each of 4–6 robots, planned blind on a phone, can break the relaxed-play pillar (see #14). Keep lists short, or give robots sensible defaults.
+Orders for 4–6 robots, planned blind on a phone, can break the relaxed-play pillar (see #14). A squad-wide action pool helps only if leaving some robots idle is a real option, so idle robots need a sensible default. Keep lists short.
 
 ## 18. Chance in stat contests
 
-If initiative, hits and parries are decided by rolls, replays get harder to explain and robots harder to infer from a match (see #3 and #11). Some chance adds drama; too much turns blind planning into a lottery. Decide how much chance there is, and show it in the replay.
+If initiative, hits and parries are decided by rolls, replays get harder to explain and robots harder to infer from a match (see #3 and #11). Some chance adds drama; too much turns blind planning into a lottery. Decide how much chance there is, and show it in the replay. D&D-style structure (visible modifiers, passive values, advantage and disadvantage) is being explored as a mitigation; see [Stats & Resolution](explorations/stats-and-resolution.md).

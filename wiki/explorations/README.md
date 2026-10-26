@@ -13,6 +13,7 @@
 |---|---|---|
 | **Crossing & information** | How are designs acquired, crossed and observed? What should a match reveal? | [crossing-and-information.md](crossing-and-information.md) |
 | **Turn-based mechanics** | How are turns ordered, budgeted and resolved? What can robots see? | [turn-based-mechanics.md](turn-based-mechanics.md) |
+| **Stats & resolution** | How do stats turn into outcomes during a turn, and how random should that feel? | [stats-and-resolution.md](stats-and-resolution.md) |
 
 ## How a topic page is built
 

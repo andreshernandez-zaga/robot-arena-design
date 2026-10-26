@@ -42,3 +42,11 @@ All decisions are **provisional** unless marked otherwise.
 | 2026-10-26 | Skills cost actions. Whether a skill's spec scales with the robot's stats is Open | Provisional |
 | 2026-10-26 | A shared timeline where one action is one beat, so cost equals duration (Claude's suggestion) | Open |
 | 2026-10-26 | Added a Match Dynamics design page | Provisional |
+| 2026-10-26 | The action budget is one pool for the whole squad; players choose how to spread it across robots. Supersedes the per-robot row above | Provisional |
+| 2026-10-26 | Shared timeline: one action is one beat, so cost equals duration (accepted). Supersedes the Open row above | Provisional |
+| 2026-10-26 | Skills with a cast time give prepared robots a chance to react | Provisional |
+| 2026-10-26 | Stats have two kinds of impact: modifiers (damage dealt and taken, armor, skill strength, order of actions) and class-like capabilities (e.g. seeing further in fog). Stats modify skills | Provisional |
+| 2026-10-26 | Explore D&D-style resolution (base plus modifiers against a target, passive values, advantage and disadvantage) to keep outcomes readable | Open |
+| 2026-10-26 | Board design is a design area: terrain that interacts with facing (barriers, chokepoints, ledges, windows) | Provisional |
+| 2026-10-26 | Stats improve only through crossing for now. Other learning mechanisms are backlog | Provisional |
+| 2026-10-26 | Added a Stats & Resolution exploration page (D&D benchmark) | Provisional |

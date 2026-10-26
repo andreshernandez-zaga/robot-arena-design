@@ -25,3 +25,9 @@
 ## Exact numbers
 
 All values (slots, reveals, crossings) will be decided during implementation.
+
+## Backlog (parked ideas)
+
+Recorded for later. Not part of the current design.
+
+- **Learning beyond crossing** (owner, 2026-10-26). Stats only improve through crossing for now. Later, a robot might get a chance to improve per win, or per critical interaction in a match. Because a robot's stats come from its blueprint, any such improvement means changing the blueprint, which today only crossing does. That would need a new learning mechanism. Keep it simple for now.
